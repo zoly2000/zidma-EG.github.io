@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong:wght@500&display=swap');
+
+.section5{
+	width: 100%;
+	height :600px;
+	background:url(pattern.png);
+}
+
+#section5-header{
+	  font-family: 'Raleway', sans-seriffont-family: 'Noto Serif NP Hmong', serif;
+    font-size: 35px;
+	  color: #2d2d32;
+    position: absolute;
+    margin-top: 100px;
+	  margin-left: 100px;
+}
+
+.tab {
+  height: 100%;
+  display: flex; justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: 300px;
+}
+
+.tab-container {
+  max-width: 1200px; height: 550px;
+  margin: 0 auto;
+}
+
+.tab-nav {
+  display: flex;
+  margin: 0px auto;
+  list-style: none;
+  position: absolute;
+  margin-top: -100px;
+  margin-left: 6%;
+  transition: all 0.3s;
+
+}
+
+.tab-nav li {
+  padding: 10px 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 1px solid #131313;
+  	
+}
+
+.tab-nav li.active {
+  background-color: #131313;
+  transform: scale(1.2);
+  color: white;
+}
+
+.tab-nav li:not(:last-child) {
+  margin-right: 70px;
+}
+
+.tab-body {
+    margin-top: 100px;
+    display: none;
+    align-items: center;
+    animation: fade 0.8s;
+  }
+
+.tab-col-left{  	
+  	margin-top: -100px;
+  	margin-left: 70px;
+  }
+
+
+
+ .tab-col-left p{
+ 	width: 50%;
+  font-size: 19px;
+ }
+
+  
+  .tab-body.active { display: flex; }
+  
+  @keyframes fade {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .tab-body .tab-col-left,
+  .tab-body .tab-col-right {
+    flex: 1;
+  }
+  
+
+.section5-right img{
+
+  position: absolute;
+  margin-top: -33%;
+  margin-left: 60%;
+  width: 34%;
+
+}

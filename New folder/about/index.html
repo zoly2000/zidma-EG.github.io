@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-Us</title>
+    <link rel = "icon" href = "../icon.png" type = "image/x-icon">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="section1.css">
+    <link rel="stylesheet" href="section2.css">
+    <link rel="stylesheet" href="section3.css">
+    <link rel="stylesheet" href="section4.css">
+    <link rel="stylesheet" href="section5.css">
+    <link rel="stylesheet" href="section6.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../loader.css">
+
+    <link rel="stylesheet" href="about-responsive.css">
+
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/a5c7b19376.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong:wght@500&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+</head>
+<body>
+  <div class="loader">
+      <img src="../zidma logo sticky.png">
+    </div>
+    <script>
+      document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                  "body").style.visibility = "hidden";
+                document.querySelector(
+                  ".loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                  ".loader").style.display = "none";
+                document.querySelector(
+                  "body").style.visibility = "visible";
+            }
+        };
+    </script>
+
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="../index.html">
+        <img src="../zidma white.png" id="logoImg">
+        <img src="../zidma logo sticky.png" id="logoImgSticky">
+      </a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times" id="zoli"></i>
+        </div>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../services/index.html">Services</a></li>
+        <li><a href="../about/index.html">About-us</a></li>
+        <li><a href="../contact/index.html">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu-list");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+      body.classList.add("disabledScroll");
+    }
+    cancelBtn.onclick = ()=>{
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      body.classList.remove("disabledScroll");
+    }
+
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+  <div class="section1">
+    <img src="about-bg.jpg">
+    <h1>About-Us</h1>
+    <div class="mouse_scroll">
+      <div>
+        <span class="m_scroll_arrows unu"></span>
+        <span class="m_scroll_arrows doi"></span>
+      </div>
+    </div>
+  </div>
+  <div class="section2">
+    <div class="section2-top">
+      <div class="section2-top-card">
+        <h1 id="section2-top-card-h1">About ZIDMA</h1>
+        <p id="section2-top-card-p1">ZIMDA Solution is a performance marketing agency based in the Egypt working to scale E-commerce & Infoproduct brands with breakthrough creative, targeted media buying and data-driven results in every step of the funnel. We respect and recognise the opinions and experiences of all stakeholders by working together with a number of customers in various market areas.</p>
+        <div class="section2-top-card-inner-h">
+          <h1>CREATIVE</h1>
+          <p> <i class="fa-solid fa-circle"></i>Experienced and qualified in all aspects of publicity. Digital marketing is the current growth medium, we realise. We are concentrated. We are concentrated. We listen. We listen. We listen. This little spark we've got.</p>
+          <h1>METHODICAL</h1>
+          <p> <i class="fa-solid fa-circle"></i>Our goal is to comprehend the relationship between the customer and the material. Consider your brand as a puzzle with each piece representing a unique strategy. We're here to get to the larger picture, one step at a time.</p>
+        </div>
+
+      </div>
+      <div class="section2-top-card">
+        <img src="tablet.png">
+        <span>- Our Philosophy -</span>
+        <h1 id="section2-top-card-h2">Good Marketing<br> isn't just good<br> ads. It's being<br> able to make<br> people feel<br> something<br> amazing.</h1>
+      </div>
+    </div>
+    <div class="section2-mid">
+      <h1>What Makes Us Special</h1>
+      <div class="section2-mid-card">
+        <div class="section2-mid-card-circle">
+          <i class="fa-solid fa-handshake"></i>
+        </div>
+        <h2>Respect – honor<br>relationships</h2>
+        <p>Recognizing the value of diversity, we treat our team members, customers, partners, and suppliers with mutual respect and care. We value the contributions of diverse persons and cultures in all sectors of the business. </p>
+      </div>
+      <div class="section2-mid-card">
+        <div class="section2-mid-card-circle">
+          <i class="fa-solid fa-rocket"></i>
+        </div>
+        <h2>Innovation – challenge<br> status quo </h2>
+        <p>We believe that viewing difficulties and possibilities from new perspectives and using our curiosity leads to significant and fruitful deviations.  </p>
+      </div>
+      <div class="section2-mid-card">
+        <div class="section2-mid-card-circle">
+         <i class="fa-solid fa-star"></i>
+        </div>
+        <h2>Flexibility <br>customer centric  </h2>
+        <p>We respond to consumer needs in a flexible and realistic manner.   </p>
+      </div>
+    </div>
+    <div class="section2-end">
+      <div class="section2-end-card">
+        <img src="marketing-vector.png">
+      </div>
+      <div class="section2-end-card">
+        <h1>Not Just An Ads Agency.</h1>
+        <ul>
+          <li>Here at ZIDMA we pride ourselves on being the plug-in marketing department for a brand that wants to scale all verticals. That doesn't just include Paid Marketing.</li><br>
+          <li>We operate with the BEST intentions for our clients and ensure that if there is an opportunity - we capitalise on it.</li><br>
+          <li>From cashflow management to your funnels, conversion rate's, content creation systems, organic platform growth, virality, life-time value's and exit strategies.</li><br>
+          <li>ZIDMA ran as if WE ARE THE BRAND, and with that only the best direction in mind for your business.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section3">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="white" fill-opacity="1" d="M0,0L60,10.7C120,21,240,43,360,80C480,117,600,171,720,176C840,181,960,139,1080,117.3C1200,96,1320,96,1380,96L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+    </svg>
+    <div class="section3-top">
+      <div class="section3-top-card">
+        <img src="analytic.png">
+      </div>
+      <div class="section3-top-card">
+        <h1>Unparalleled Results</h1>
+        <ul>
+          <li>We're all tired of agencies promising us the world and then leaving us in the dark.</li><br>
+          <li>At ZIDMA, we believe not only an exceptional service but complete transparency too. Our client case studies are some of the biggest in the eCommerce & Info-product industry. A fact we are not shamed to hide.</li><br>
+          <li>Whether it's just an extra $50,000 made for a client or an extra £5 million, we share it all.</li>
+          <h2>No hidden secrets. Just amazing client growth and brand scaling.</h2>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="section4">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#27282a" fill-opacity="1" d="M0,256L80,256C160,256,320,256,480,245.3C640,235,800,213,960,181.3C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+    <div class="section4-cont">
+      <div class="section4-cont-card">
+        <h1>Working with World-Class brands all over the globe to scale all verticals.</h1>
+        <h2>We're thrilled to be working with some of the best and brightest brands.</h2>
+        <h3>Will your brand be our success story?</h3>
+        <a href="../contact/index.html">
+          <div class="section4-cont-card-btn">
+            <h5>Get In Touch</h5>
+          </div>
+        </a>
+      </div>
+      <div class="section4-cont-card">
+        <div class="slider-cont">  
+      <div id="slider">
+        <ul id="slideWrap"> 
+          <li><img src="../street boost computer.jpg"></li>
+          <li><img src="../utes.jpg" alt=""></li>
+          <li><img src="../pingo-logo.jpg" alt=""></li>
+          <li><img src="../ozz.jpg" alt=""></li>
+          <li><img src="../campina.jpg" alt=""></li>
+          <li><img src="../reclely.jpg" alt=""></li>
+          <li><img src="../street boost computer.jpg"></li>
+          <li><img src="../utes.jpg" alt=""></li>
+          <li><img src="../pingo-logo.jpg" alt=""></li>
+          <li><img src="../ozz.jpg" alt=""></li>
+          <li><img src="../campina.jpg" alt=""></li>
+          <li><img src="../reclely.jpg" alt=""></li>
+        </ul>
+        <a id="prev" href="#">&#8810;</a>
+        <a id="next" href="#">&#8811;</a>
+        </div>
+      </div>
+      <img src="../lap.png" id="section4-frame"> 
+  
+  
+  <script>
+    var responsiveSlider = function() {
+
+var slider = document.getElementById("slider");
+var sliderWidth = slider.offsetWidth;
+var slideList = document.getElementById("slideWrap");
+var count = 1;
+var items = slideList.querySelectorAll("li").length;
+var prev = document.getElementById("prev");
+var next = document.getElementById("next");
+
+window.addEventListener('resize', function() {
+  sliderWidth = slider.offsetWidth;
+});
+
+var prevSlide = function() {
+  if(count > 1) {
+    count = count - 2;
+    slideList.style.left = "-" + count * sliderWidth + "px";
+    count++;
+  }
+  else if(count = 1) {
+    count = items - 1;
+    slideList.style.left = "-" + count * sliderWidth + "px";
+    count++;
+  }
+};
+
+var nextSlide = function() {
+  if(count < items) {
+    slideList.style.left = "-" + count * sliderWidth + "px";
+    count++;
+  }
+  else if(count = items) {
+    slideList.style.left = "0px";
+    count = 1;
+  }
+};
+
+next.addEventListener("click", function() {
+  nextSlide();
+});
+
+prev.addEventListener("click", function() {
+  prevSlide();
+});
+
+setInterval(function() {
+  nextSlide()
+}, 4000);
+
+};
+
+window.onload = function() {
+responsiveSlider();  
+}
+
+
+  </script>
+      </div>
+    </div>
+  </div>
+  <div class="section5">
+
+    <h1 id="section5-header">Your Partner In Success .</h1>
+
+<section class="tab">
+      <div class="tab-container">
+        <ul class="tab-nav">
+          <li class="active"><span id="tab-nav-responsive">Our</span> Approach</li>
+          <li><span id="tab-nav-responsive">Our</span> Mission</li>
+          <li><span id="tab-nav-responsive">Our</span> Vision</li>     
+        </ul>
+        <div class="tab-body active">
+          <div class="tab-col-left">
+            <p>We recognise that practically every business wants more. More people visiting your website More people following you on social media There are more leads. Increased sales</p>      
+          </div>
+        </div>
+        <div class="tab-body">
+            <div class="tab-col-left">
+              <p>We intend to provide our clients with the best customized and practical solutions to expand their online and offline presence and achieve their business goals through providing smart solutions, a creative team, friendly service, fast delivery, and ongoing support.</p>        
+            </div>
+          </div>
+          <div class="tab-body">
+            <div class="tab-col-left">
+              <p>Working with World-Class brands all over the globe to scale all verticals to deliver a measurable results to our clients, employees, and vendors.Provide the best customer results possible and deliver the WOW factor through our services.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="section5-right">
+          <img src="about-vector.png">
+        </div>
+      </section>
+
+<script>
+
+    const tabNavList = document.querySelectorAll('.tab-nav li');
+const tabBody = document.querySelectorAll('.tab-body');
+
+tabNavList.forEach((item,index,listArray)=>{
+    item.addEventListener('click',()=>{
+        if(item.classList.contains('active')){
+            return;
+        }else{
+            document.querySelector('.active').classList.remove('active');
+            item.classList.add('active');
+        }
+
+        if(listArray[0].classList.contains('active')){
+            tabBody[0].classList.add('active');
+            tabBody[1].classList.remove('active');
+            tabBody[2].classList.remove('active');
+        }
+
+        if(listArray[1].classList.contains('active')){
+            tabBody[1].classList.add('active');
+            tabBody[0].classList.remove('active');
+            tabBody[2].classList.remove('active');
+        }
+
+        if(listArray[2].classList.contains('active')){
+            tabBody[2].classList.add('active');
+            tabBody[1].classList.remove('active');
+            tabBody[0].classList.remove('active');
+        }
+    })
+})
+    
+</script>
+    
+  </div>
+  <div class="section6">
+    <h1 id="section6-head">Our Partners .</h1>
+    <div class="section6-cont">
+      <div class="section6-sec">
+        <img src="../tawasol.png">
+      </div>
+      <div class="section6-sec">
+        <img src="../meta.jpg">
+      </div>
+      <div class="section6-sec">
+        <img src="../google.jpg">
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="footer">
+
+    <div class="footer-cont">
+      <div class="footer-sec">
+        <h1 id="footer-sec-head">About Us</h1>
+        <ul id="footer-sec-ul"> 
+          <li><a href="#">Company Profile</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Affiliate Program</a></li>
+        </ul>        
+      </div>
+
+      <div class="footer-sec">
+        <h1 id="footer-sec-head">Support</h1>
+        <ul id="footer-sec-ul">
+          <li><a href="#">Frequently Asked</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Web Development & Design </a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>  
+      </div>
+      <div class="footer-sec">
+        <h1 id="footer-sec-head">Our Services</h1>
+        <ul id="footer-sec-ul">
+          <li><a href="../services/services-pages/seo/index.html">Search Engine Optimization</a></li>
+          <li><a href="../services/services-pages/sem/index.html">Search Engine Marketing</a></li>
+          <li><a href="../services/services-pages/web/index.html">Web Development & Design </a></li>
+          <li><a href="../services/services-pages/smm/index.html">Social Media Markering</a></li>
+          <li><a href="../services/services-pages/email/index.html">E-Mail Marketing</a></li>
+          <li><a href="../services/services-pages/app/index.html">Mobile App development</a></li>
+          <li><a href="#">Reservation QR Systems </a></li>
+        </ul>    
+      </div>
+
+      <div class="footer-sec">
+
+        <h1 id="footer-sec-head">ZIDMA Solutions</h1>
+        <p>We intend to provide our clients with the best customized and practical solutions to expand their online and offline presence and achieve their business goals through providing smart solutions, a creative team, friendly service, fast delivery, and ongoing support.</p>
+
+        <ul id="footer-social">
+          <a href="https://www.facebook.com/"><li><i class="fa-brands fa-square-facebook"></i></li></a>
+          <a href="https://www.instagram.com/"><li><i class="fa-brands fa-instagram instagram"></i></li></a>
+          <a href="#"><li><i class="fa-brands fa-whatsapp"></i></li></a>
+          <a href="#"><li><i class="fa-brands fa-behance"></i></li></a>
+          <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a>
+        </ul>
+
+      </div>
+      
+    </div>
+
+  </div>
+  <div class="copyright-footer">
+    <p> © Copyrights 2020 ZIDMA Solutions All rights reserved.</p>
+  </div>
+  </body>
+</html>

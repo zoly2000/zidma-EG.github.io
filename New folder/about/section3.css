@@ -1,0 +1,46 @@
+.section3{
+	width: 100%;
+	height: 1010px;
+	background-color: #27282a;
+}
+
+
+.section3-top{
+	width: 90%;
+	margin-left: 2.5%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(500px,1fr));
+	gap: 100px;
+}
+
+.section3-top-card{
+	width: 600px;
+	height: 650px;
+}
+
+.section3-top-card img{
+	width: 80%;
+	margin-left: 5%;
+}
+
+.section3-top-card h1{
+	font-size: 40px;
+	color: white;
+	margin-top: 6%;
+}
+
+.section3-top-card ul{
+	list-style: none;
+	color: white;
+	font-size: 19px;
+	font-weight: 500;
+	margin-top: 3%;
+	width: 80%;
+	line-height: 35px;
+}
+
+.section3-top-card h2{
+	color: #c1c2c4;
+	font-size: 19px;
+	margin-top: 8%;
+}

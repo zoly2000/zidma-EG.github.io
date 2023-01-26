@@ -1,0 +1,177 @@
+.section2{
+	width: 100%;
+	height: 2100px;
+}
+
+.section2-app-up{
+	width: 90%;
+    margin-top: 10%;
+	margin-left: 3%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+	gap: 100px;
+}
+
+.section2-app-up-cards{
+	width: 600px;
+	height: 600px;
+}
+
+#section2-app-up-cards-h1{
+	color: #3b974c;
+	font-size: 28px;
+}
+
+#section2-app-up-cards-p1{
+	margin-top: 1%;
+	font-size: 18px;
+	line-height: 35px;
+	width: 95%;
+}
+
+#section2-app-up-cards-h2{
+	color: #47b75c;
+	font-size: 24px;
+	margin-top: 8%;
+	margin-left: 8%;
+}
+
+#section2-app-up-cards-p2{
+	margin-top: 1%;
+	font-size: 18px;
+	line-height: 35px;
+	width: 80%;
+	margin-left: 9%;
+}
+
+.section2-app-up-cards .fa-gears{
+	position: absolute;
+	margin-top: 4.3%;
+	color: #47b75c;
+	font-size: 30px;
+}
+.section2-app-up-cards .fa-gear{
+	position: absolute;
+	margin-top: 3.4%;
+	margin-left: 1.4%;
+	color: #47b75c;
+	font-size: 20px;
+}
+
+.section2-app-up-cards img{
+	width: 65%;
+	margin-left: 15%;
+	margin-top: 5%;
+}
+
+.section2-app-mid{
+	width: 90%;
+    margin-top: 8%;
+	margin-left: 5.5%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(420px,1fr));
+	gap: 100px;
+}
+
+#section2-app-mid-h{
+	text-align: center;
+	font-size: 37px;
+}
+
+.section2-app-mid-cards{
+	width: 500px;
+	height: 600px;
+
+}
+.section2-app-mid-cards .fa-android{
+	color: #3DDC84;
+	position: absolute;
+	font-size: 70px;
+	margin-left: 16.5%;
+}
+
+.section2-app-mid-cards .fa-apple{
+	color: #555555;
+	position: absolute;
+	font-size: 60px;
+	margin-left: 17.5%;
+}
+
+#section2-app-mid-cards-h1{
+	text-align: center;
+	margin-top: 14%;
+}
+
+#section2-app-mid-cards-p1{
+	text-align: center;
+	margin-top: 2%;
+	line-height: 35px;
+}
+
+#section2-app-mid-cards-h2{
+	text-align: center;
+	margin-top: 35%;
+}
+
+#section2-app-mid-cards-p2{
+	text-align: center;
+	margin-top: 2%;
+	line-height: 35px;
+}
+
+.section2-app-mid-cards .fa-mobile-screen-button{
+	color: #0a01bf;
+	position: absolute;
+	font-size: 40px;
+	margin-top: 9%;
+	margin-left: 21%;
+}
+
+.section2-app-mid-cards .fa-tablet-screen-button{
+	color: #0a01bf;
+	position: absolute;
+	font-size: 70px;
+	margin-top: 7%;
+	margin-left: 16%;
+}
+.section2-app-mid-cards .fa-users-rays{
+	color: green;
+	position: absolute;
+	font-size: 60px;
+	margin-top: 8%;
+	margin-left: 16%;
+}
+
+.section2-app-end{
+	width: 90%;
+    margin-top: 8%;
+	margin-left: 6%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(420px,1fr));
+	gap: 70px;
+}
+
+.section2-app-end-cards{
+	width: 550px;
+	height: 600px;
+
+}
+.section2-app-end-cards h1{
+   font-size: 30px;
+   color: green;
+}
+
+.section2-app-end-cards ul{
+	margin-top: 4%;
+	margin-left: 3%;
+	line-height: 30px;
+	color: #181818;
+
+}
+.section2-app-end-cards span{
+	font-weight: 600;
+}
+.section2-app-end-cards img{
+	width: 100%;
+	margin-top: 10%;
+}

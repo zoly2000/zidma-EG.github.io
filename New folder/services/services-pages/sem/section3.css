@@ -1,0 +1,65 @@
+.section3{
+	width: 100%;
+	height: 950px;
+}
+
+.section3-cards-cont{
+	width: 90%;
+    margin-top: 7%;
+	margin-left: 1.5%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+	gap: 120px;
+
+
+}
+
+.section3-card{
+	width: 360px;
+	height: 350px;
+	background-color: white;  
+	transition: 0.2s ease-in-out; 
+}
+
+
+
+.section3-card-box{
+	width: 100px;
+	height: 90px;
+	border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    color: #1a1746;
+    margin-top: 15%;
+    margin-left: 1%;
+	font-size: 45px;
+    text-align: center;
+}
+.fa-magnifying-glass-plus{
+	color: #4285f4;
+}
+.fa-crosshairs{
+	color: #ea4335;
+}
+.fa-thumbs-up{
+	color: #fbbc05;
+}
+.fa-google{
+    color: #34a853;
+}
+
+.section3-card p{
+    color: #2d2d32;
+	margin-top: -22%;
+	margin-left: 25%;
+	text-align: left;
+	width: 80%;
+}
+
+.section3-card img{
+	width: 100%;
+	margin-top: 25%;
+}
+#google-colors{
+	margin-top: 7%;
+}

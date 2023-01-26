@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel = "icon" href = "../icon.png" type = "image/x-icon">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="section1.css">
+    <link rel="stylesheet" href="section2.css">
+    <link rel="stylesheet" href="section3.css">
+    <link rel="stylesheet" href="section4.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../loader.css">
+
+    <link rel="stylesheet" href="sresponsive.css">
+
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/a5c7b19376.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong:wght@500&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+</head>
+<body>
+  <div class="loader">
+      <img src="../zidma logo sticky.png">
+    </div>
+    <script>
+      document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                  "body").style.visibility = "hidden";
+                document.querySelector(
+                  ".loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                  ".loader").style.display = "none";
+                document.querySelector(
+                  "body").style.visibility = "visible";
+            }
+        };
+    </script>
+
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="../index.html">
+        <img src="../zidma white.png" id="logoImg">
+        <img src="../zidma logo sticky.png" id="logoImgSticky">
+      </a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times" id="zoli"></i>
+        </div>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="../about/index.html">About-us</a></li>
+        <li><a href="../contact/index.html">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu-list");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+      body.classList.add("disabledScroll");
+    }
+    cancelBtn.onclick = ()=>{
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      body.classList.remove("disabledScroll");
+    }
+
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+  <div class="section1">
+    <img src="analytics.jpg">
+    <h1  id="section1-header">What Do We Offer</h1>
+    <h6 id="section1-links">
+      <a href="../index.html">Home </a>
+      <p>&nbsp; > &nbsp;Our Services</p>
+    </h6>
+
+  </div>
+
+  <div class="section2">
+    <h1 id="section2-head">Your Partner In Success .</h1>
+    <p id="section2-p">We are a digital marketing agency that is driven both strategically and artistically.We combine all parts of digital marketing to assist you in growing your business and developing strong relationships with your customers. </p>
+    <div class="section2-cards-cont">
+
+      <div class="section2-card">
+        <img src="seo.png" id="secction2-card-img-left">
+      </div>
+
+      <div class="section2-card">
+        <h1 id="section2-card-head-right">Search Engine optimization</h1>
+        <p id="section2-card-p-right">(SEO) is the act of influencing a website’s or a web page’s prominence in an online search engine’s unpaid results, also known as organic, or earned results.</p>
+        <a href="services-pages/seo/index.html">
+          <div id="section2-card-btn-right"><h6>Learn More  <i class="fa-solid fa-arrow-right" id="section2-card-arrow"></i></h6> </div>
+        </a>
+      </div>
+
+
+      <div class="section2-card">
+        <h1 id="section2-card-head-left">Search Engine Marketing</h1>
+        <p id="section2-card-p-left">In an increasingly competitive economy, search engine marketing (SEM) is one of the most effective strategies to expand your business.</p>
+        <a href="services-pages/sem/index.html">
+          <div id="section2-card-btn-left"><h6>Learn More  <i class="fa-solid fa-arrow-right" id="section2-card-arrow"></i></h6> </div>
+        </a>
+      </div>
+      <div class="section2-card">
+        <img src="sem.png" id="secction2-card-img-right">
+      </div>
+
+      <div class="section2-card">
+        <img src="web.png" id="secction2-card-img-right">
+      </div>
+      <div class="section2-card">
+        <h1 id="section2-card-head-right">Web Development & Design </h1>
+        <p id="section2-card-p-right">It's the work that happens behind the scenes to make a website look great, work fast and perform well. All of this is done by a team of experts by using a variety of coding languages</p>
+        <a href="services-pages/web/index.html">
+          <div id="section2-card-btn-right"><h6>Learn More  <i class="fa-solid fa-arrow-right" id="section2-card-arrow"></i></h6> </div>
+        </a>
+      </div>
+
+      <div class="section2-card">
+        <h1 id="section2-card-head-left">Social Media Marketing </h1>
+        <p id="section2-card-p-left">For businesses of all sizes, social media is an essential marketing platform. “Why should our business use social media?” was a popular query a few years ago. Vocus Digital is one of the best digital marketing agencies in Egypt, and we’ll assist you to achieve your objectives.</p>
+        <a href="services-pages/smm/index.html">
+          <div id="section2-card-btn-left"><h6>Learn More  <i class="fa-solid fa-arrow-right" id="section2-card-arrow"></i></h6> </div>
+        </a>
+      </div>
+
+      <div class="section2-card">
+        <img src="social media.png" id="secction2-card-img-right">
+      </div>
+
+      <div class="section2-card">
+        <img src="email.png" id="secction2-card-img-left">
+      </div>
+      <div class="section2-card">
+        <h1 id="section2-card-head-right">E-Mail Marketing </h1>
+        <p id="section2-card-p-right">We make lasting impressions that convert viewers into believers, participants into advocates, and consumers into purchasers. Telling your narrative in a way that engages, inspires, and motivates the individuals you’re trying to reach.</p>
+        <a href="services-pages/email/index.html">
+          <div id="section2-card-btn-right"><h6>Learn More  <i class="fa-solid fa-arrow-right" id="section2-card-arrow"></i></h6> </div>
+        </a>
+      </div>
+
+      <div class="section2-card">
+        <h1 id="section2-card-head-left">Mobile App development </h1>
+        <p id="section2-card-p-left">Ensure a fascinating presence on the digital environment with modern, feature-rich mobile apps that provide visual delight that is hard to come across. With our knowledge and experience in the field.</p>
+        <a href="services-pages/app/index.html">
+          <div id="section2-card-btn-left"><h6>Learn More  <i class="fa-solid fa-arrow-right" id="section2-card-arrow"></i></h6> </div>
+        </a>
+      </div>
+
+      <div class="section2-card">
+        <img src="app dev.png" id="secction2-card-img-right">
+      </div>
+
+    </div>
+
+  </div>
+  <div class="section3">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="white" fill-opacity="1" d="M0,0L60,10.7C120,21,240,43,360,80C480,117,600,171,720,176C840,181,960,139,1080,117.3C1200,96,1320,96,1380,96L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">       </path>
+    </svg>
+
+    <h1 id="section3-head"> Start Your Project .</h1>
+    <div class="section3-box-cont">
+
+      <div class="section3-box1">
+        <a href="https://wa.me/+201118567904?text=Hello" id="section3-meassage">
+          <i class="fa-brands fa-whatsapp" id="section3-wapp-animation"></i>
+        </a>
+        <a href="tel:+201025087222">
+          <h1 id="section3-phone-number">(+20) 102 5087 222</h1>
+        </a>
+        <p id="section3-box1-p">Have any enquiries don't hesitate to messege or give us a call</p>
+      </div>
+      <div class="section3-box2">
+        <a href="mailto: omarsoliman2000@gmail.com" id="section3-mail-icon">
+          <i class="fa-solid fa-envelope-open-text" id="section3-mail-animation"></i>
+        </a>
+
+        <a href="mailto: omarsoliman2000@gmail.com" id="section3-mail">
+         <h1>sales@zidmas.com</h1>
+        </a>
+        <p id="section3-box2-p">Have something in your mind let us know</p>
+      </div>
+      <div class="contactform">
+
+        <div class="contactform-cont">
+          <form action="#">
+            <div class="group">      
+             <input type="text" required>
+             <span class="highlight"></span>
+             <span class="bar"></span>
+             <label>Name</label>
+           </div>
+
+            <div class="group">      
+             <input type="text" required>
+             <span class="highlight"></span>
+             <span class="bar"></span>
+             <label>Company Name</label>
+            </div>
+      
+            <div class="group">      
+             <input type="email" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Email</label>
+            </div>
+
+            <div class="group">      
+             <input type="text" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Phone Number</label>
+            </div>
+            <div class="group"> 
+
+              <select id="services-select" name="service" form="service-form" >
+                <option value="0" selected disabled>Choose From Our Services</option>
+                <option value="1">Search Engine optimization</option>
+                <option value="2">Search Engine Marketing</option>
+                <option value="3">Web Development & Design </option>
+                <option value="4">Social Media Markering</option>
+                <option value="5">E-Mail Marketing</option>
+                <option value="6">Mobile App development</option>
+              </select>  
+            </div>
+
+            <textarea placeholder="Write A Note"></textarea>
+            <input type="submit" value="Send Message" id="send">
+      </form>
+        </div>     
+      </div>
+    </div>
+  </div>
+
+  <div class="section4">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#f4f4f4" fill-opacity="1" d="M0,0L60,10.7C120,21,240,43,360,80C480,117,600,171,720,176C840,181,960,139,1080,117.3C1200,96,1320,96,1380,96L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+    </svg>
+    <h1 id="section4-head">Our Recent projects</h1>
+
+    <div class="section4-cards-cont">
+
+      <div class="section4-card">
+        <img src="../poster1.jpg">
+      </div>
+
+      <div class="section4-card">
+        <img src="../utes-solar.jpg">
+      </div>
+
+      <div class="section4-card">
+        <img src="../oil.jpg">
+      </div>
+
+      <div class="section4-card">
+        <img src="../auction.jpg">
+      </div>
+
+      <div class="section4-card">
+        <img src="../pingo.jpg">
+      </div>
+
+      <div class="section4-card">
+        <img src="../suits.jpg">
+      </div>
+      <a href="#" class="section4-button">
+        <h1 id="zoli">Discover More</h1>
+      </a>
+    </div>
+
+
+
+  </div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+</script>
+    
+  </div>
+
+
+  <div class="footer">
+    
+
+    <div class="footer-cont">
+      <div class="footer-sec">
+        <h1 id="footer-sec-head">About Us</h1>
+        <ul id="footer-sec-ul"> 
+          <li><a href="#">Company Profile</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Affiliate Program</a></li>
+        </ul>        
+      </div>
+
+      <div class="footer-sec">
+        <h1 id="footer-sec-head">Support</h1>
+        <ul id="footer-sec-ul">
+          <li><a href="#">Frequently Asked</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Web Development & Design </a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>  
+      </div>
+      <div class="footer-sec">
+        <h1 id="footer-sec-head">Our Services</h1>
+        <ul id="footer-sec-ul">
+          <li><a href="services-pages/seo/index.html">Search Engine Optimization</a></li>
+          <li><a href="services-pages/sem/index.html">Search Engine Marketing</a></li>
+          <li><a href="services-pages/web/index.html">Web Development & Design </a></li>
+          <li><a href="services-pages/smm/index.html">Social Media Markering</a></li>
+          <li><a href="services-pages/email/index.html">E-Mail Marketing</a></li>
+          <li><a href="services-pages/app/index.html">Mobile App development</a></li>
+          <li><a href="#">Reservation QR Systems </a></li>
+        </ul>    
+      </div>
+
+      <div class="footer-sec">
+
+        <h1 id="footer-sec-head">ZIDMA Solutions</h1>
+        <p>We intend to provide our clients with the best customized and practical solutions to expand their online and offline presence and achieve their business goals through providing smart solutions, a creative team, friendly service, fast delivery, and ongoing support.</p>
+
+        <ul id="footer-social">
+          <a href="https://www.facebook.com/"><li><i class="fa-brands fa-square-facebook"></i></li></a>
+          <a href="https://www.instagram.com/"><li><i class="fa-brands fa-instagram instagram"></i></li></a>
+          <a href="#"><li><i class="fa-brands fa-whatsapp"></i></li></a>
+          <a href="#"><li><i class="fa-brands fa-behance"></i></li></a>
+          <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a>
+        </ul>
+
+      </div>
+      
+    </div>
+
+  </div>
+  <div class="copyright-footer">
+    <p> © Copyrights 2020 ZIDMA Solutions All rights reserved.</p>
+  </div>
+
+
+
+</body>
+</html>

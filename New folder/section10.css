@@ -1,0 +1,32 @@
+.section10{
+	width: 100%;
+	height: 300px;
+
+}
+#section10-head{
+	font-size: 50px;
+ 	position: absolute;
+ 	margin-top: -12%;
+ 	margin-left: 35%;
+ 	color: #333333;
+}
+
+.section10-cont{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap:20px;
+	margin-top: 15%;
+	margin-left: 8.5%;
+}
+
+.section10-sec{
+	width: 300px;
+	height: 200px;
+
+}
+
+.section10-sec img{
+	width: 100%;
+	height: 100%;
+}
+

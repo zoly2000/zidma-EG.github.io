@@ -1,0 +1,140 @@
+.section2{
+	width: 100%;
+	height: 3000px;
+	background-color: white;
+}
+
+#section2-head{
+	margin-top: 6%;
+	text-align: center;
+}
+
+#section2-p{
+	margin-top: 1%;
+	margin-left: 16%;
+	text-align: center;
+	font-size: 17px;
+	line-height: 30px;
+	width: 65%;
+	font-weight: normal;	
+	color: #585857;
+}
+
+.section2-cards-cont{
+	width: 100%;
+    margin-top: 8%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(500px,1fr));
+	gap: 150px;
+
+}
+
+.section2-card{
+	width: 100%;
+	height: 320px;
+
+
+}
+
+#secction2-card-img-left{
+	width: 70%;
+	height:100%;
+	margin-left: 10%;
+}
+#section2-card-head-left{
+	margin-top: 15%;
+	margin-left: 10%;
+	font-size: 25px;
+	color: #444444;
+	font-family: sans-serif;
+}
+
+#section2-card-p-left{
+	margin-top: 5%;
+	margin-left: 10.5%;
+	width: 95%;
+	font-size: 17px;
+	color: #2a2a2a;
+		
+}
+#secction2-card-img-right{
+	width: 70%;
+	height:100%;
+	margin-left: 10%;
+}
+
+#section2-card-head-right{
+	margin-top: 15%;
+	font-size: 25px;
+	color: #444444;
+	font-family: sans-serif;
+}
+
+#section2-card-p-right{
+	margin-top: 5%;
+	width: 95%;
+	font-size: 17px;
+	color: #2a2a2a;
+	margin-left: 0.5%;	
+}
+.section2-card a{
+  text-decoration: none;	
+}
+#section2-card-btn-right{
+  width: 120px;
+  height: 35px;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 4%;
+  margin-left: 0.5%;
+  background-color: #074997;
+  transition: .5s ease;
+}
+#section2-card-btn-left{
+  width: 120px;
+  height: 35px;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 4%;
+  margin-left: 10.5%;
+  background-color: #074997;
+  transition: 0.5s ease;
+}
+#section2-card-btn-left h6{
+	font-size: 16px;
+	font-weight: 500;
+	position: relative;
+	top: 10%;
+
+}
+#section2-card-btn-right h6{
+	font-size: 16px;
+	font-weight: 500;
+	position: relative;
+	top: 10%;
+}
+
+#section2-card-btn-left:hover{
+  width: 170px;
+  height: 35px;
+}
+#section2-card-arrow{
+	display: none;
+	
+}
+#section2-card-btn-left:hover #section2-card-arrow{
+	display: inline-flex;
+	transition: 1s ease
+}
+
+#section2-card-btn-right:hover{
+  width: 170px;
+  height: 35px;
+}
+
+#section2-card-btn-right:hover #section2-card-arrow{
+	display: inline-flex;
+	transition: 1s ease
+}

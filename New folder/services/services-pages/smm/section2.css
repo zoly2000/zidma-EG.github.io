@@ -1,0 +1,77 @@
+.section2{
+	width: 100%;
+	height: 1100px;
+	background-color: white;
+}
+
+
+
+.section2-top-cards{
+	width: 90%;
+    margin-top: 7%;
+	margin-left: 4.5%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+	gap: 50px;
+}
+
+.section2-top-card{
+	width: 580px;
+	height: 400px; 
+}
+#section2-top-card-h1{
+	font-size: 21px;
+    font-family: serif;
+    font-weight: 600;
+    margin-top: 8%;
+    color: #333333;
+}
+
+#section2-top-card-h2{
+    font-family: sans-serif;
+    font-size: 27px;
+    font-weight: 800;
+    margin-top: 2%;
+}
+#section2-top-card-p{
+    margin-top: 3%;
+}
+.section2-top-card img{
+	width: 67%;
+	margin-left: 30%;
+}
+
+
+.section2-mid-cards{
+	width: 90%;
+    margin-top: 10%;
+	margin-left: 4.5%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+	gap: 50px;
+}
+
+.section2-mid-card{
+	width: 580px;
+	height: 400px; 
+}
+.section2-mid-card img{
+	width: 80%;
+}
+#section2-mid-card-h1{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 25%;
+    text-align: center;
+}
+#section2-mid-card-h2{
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 5%;
+    text-align: center;
+    color: #3c3c3c;
+}
+
+
+

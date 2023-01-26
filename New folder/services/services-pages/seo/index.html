@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO</title>
+    <link rel = "icon" href = "../../../icon.png" type = "image/x-icon">
+
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="section1.css">
+    <link rel="stylesheet" href="section2.css">
+    <link rel="stylesheet" href="section3.css">
+    <link rel="stylesheet" href="section4.css">
+    <link rel="stylesheet" href="section5.css">
+    <link rel="stylesheet" href="../../../footer.css">
+    <link rel="stylesheet" href="../../../loader.css">
+
+
+    <link rel="stylesheet" href="seo-responsive.css">
+
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/a5c7b19376.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong:wght@500&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+</head>
+<body style="background-color: #f6f5f5;">
+  <div class="loader">
+      <img src="../../../zidma logo sticky.png">
+    </div>
+    <script>
+      document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                  "body").style.visibility = "hidden";
+                document.querySelector(
+                  ".loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                  ".loader").style.display = "none";
+                document.querySelector(
+                  "body").style.visibility = "visible";
+            }
+        };
+    </script>
+
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="#">
+        <img src="../../../zidma white.png" id="logoImg">
+        <img src="../../../zidma logo sticky.png" id="logoImgSticky">
+      </a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times" id="zoli"></i>
+        </div>
+        <li><a href="../../../index.html">Home</a></li>
+        <li><a href="../../index.html">Services</a></li>
+        <li><a href="../../../about/index.html">About-Us</a></li>
+        <li><a href="../../../contact/index.html">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu-list");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+      body.classList.add("disabledScroll");
+    }
+    cancelBtn.onclick = ()=>{
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      body.classList.remove("disabledScroll");
+    }
+
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+    <div class="section1">
+      <img src="seo-bg.png">
+      <h1  id="section1-header">Search Engine Optimization</h1>
+      <h6 id="section1-links">
+        <a href="../../../index.html">Home </a>
+        <p>&nbsp; > &nbsp;</p>
+        <a href="../../index.html">Our Services </a>
+        <p>&nbsp; >> &nbsp;SEO</p>
+      </h6>
+
+    </div>
+
+    <div class="section2">
+      <img src="seo-analytic.png" id="section2-top-img">
+      <h1 id="section2-top-top-h">Your Partner In Sucess.</h1>
+      <h1 id="section2-top-end-h">Why Is Search Engine Optimization Service Is <br>Important For Your Business?</h1>
+      <p id="section2-top-p">It is the process of optimizing parts of your webpages so they rank higher on search engines and get more search engine traffic.This includes updating on-page content, title tags, internal links, and more.Search engines like Google look at keywords and other on-page SEO cues to check whether a page matches a user’s search intent.</p>
+
+      <h1 id="section2-end-top-h">We Make Your Life Better</h1>
+      <h1 id="section2-end-end-h">Real-Time Social Media Analytics And Market Strategy</h1>
+      <p id="section2-end-p">When it comes to generating good organic search results, content is king (or at the very least, competing for the title). When trying to boost SEO results, it's critical to have a solid, well-thought-out, and focused content plan in place.</p>
+
+      <ul id="section2-list">
+        <li><i class="fa-solid fa-list-check"></i>&nbsp;&nbsp; SEO Planning</li>
+        <li><i class="fa-solid fa-rocket"></i>&nbsp;&nbsp; Rank Higher on Google </li>
+        <li><i class="fa-solid fa-chart-pie"></i>&nbsp;&nbsp; Analyse </li>
+      </ul>
+
+      <img src="1seo.gif" id="section2-end-img">
+
+
+    </div>
+    <div class="section3">
+      <img src="section3-bg.jpg" id="section3-bg">
+      <h1 id="section3-small-h">How Is My Website Performing?</h1>
+      <h1 id="section3-big-h">CHECK YOUR WEBSITE SEO SCORE NOW</h1>
+      <form action="#" class="section3-form">
+        <input type="text" name="link" class="section3-form-input" placeholder="&nbsp;&nbsp;Website Link" id="form-web-link" required>
+        <input type="email" name="link" class="section3-form-input" placeholder="&nbsp;&nbsp;Email" id="form-email" required>
+        <input type="submit" value="Get Your Report" class="section3-form-send" id="form-btn">
+      </form> 
+    </div>
+    <div class="section4">
+      <h1 id="section4-small-h">Take A Step Forward And Drive Your Sales Nuts</h1>
+      <h1 id="section4-big-h">Numerous Fields Of Our SEO Offering </h1>
+      <div class="section4-v-line"></div>
+      <p id="section-4-p">Our SEO strategy will depend on the process of transforming the content of your website by subject and keyword lists, which helps search engines like Google understand the user's purpose.<br> We provide marketing services to startups and small businesses looking for a partner for their digital media</p>
+    
+
+    <div class="section4-cards-cont">
+      
+      <div class="section4-card">
+        <div class="section4-card-box">
+          <i class="fa-solid fa-pen-to-square"></i> 
+        </div>
+        <h1>On-Page Optimization </h1>
+        <p> Your website has been modified to include powerful SEO content and keyword optimization approaches. </p>
+        
+      </div>
+
+      <div class="section4-card">
+        <div class="section4-card-box" id="section4-card-box-bg2">
+          <i class="fa-solid fa-share-from-square"></i>
+        </div>
+        <h1>Off-Page Optimization </h1>
+        <p> Building links, enhancing off-site presence, and connecting with the relevant channels are all external initiatives. .</p>
+        
+      </div>
+
+      <div class="section4-card">
+        <div class="section4-card-box" id="section4-card-box-bg3">
+          <i class="fa-solid fa-magnifying-glass-chart"></i>
+        </div>
+        <h1>Competitor Analysis  </h1>
+        <p> We take a close look at some of the most powerful competitors to see how they approach SEO. </p>
+        
+      </div>
+
+      <div class="section4-card">
+        <div class="section4-card-box" id="section4-card-box-bg4">
+
+          <i class="fa-solid fa-chart-line"></i>
+        </div>
+        <h1>Project Analysis </h1>
+        <p>We take a close look at some of the most powerful competitors to see how they approach SEO.  </p>
+        
+      </div>
+
+      <div class="section4-card">
+        <div class="section4-card-box">
+          <i class="fa-solid fa-arrow-up-a-z"></i>
+        </div>
+        <h1> &nbsp; Reporting </h1>
+        <p> Each report we deliver to our clients includes a detailed breakdown of our efforts and the outcomes we've achieved. </p>
+        
+      </div>
+
+      <div class="section4-card">
+        <div class="section4-card-box" id="section4-card-box-bg6">
+          <i class="fa-solid fa-square-check"></i>
+        </div>
+        <h1>Re-Assessment </h1>
+        <p>We are continually reviewing current practises in order to make beneficial improvements to the SEO process. </p>
+        
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="section5">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="white" fill-opacity="1" d="M0,0L30,10.7C120,21,240,43,360,80C480,117,600,171,720,176C840,181,960,139,1080,117.3C1200,96,1320,96,1380,96L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">       </path>
+    </svg>
+
+    <h1 id="section5-head"> Start Your Project .</h1>
+    <div class="section5-box-cont">
+
+      <div class="section5-box1">
+        <a href="https://wa.me/+201118567904?text=Hello" id="section5-meassage">
+          <i class="fa-brands fa-whatsapp" id="section5-wapp-animation"></i>
+        </a>
+        <a href="tel:+201025087222">
+          <h1 id="section5-phone-number">(+20) 102 5087 222</h1>
+        </a>
+        <p id="section5-box1-p">Have any enquiries don't hesitate to messege or give us a call</p>
+      </div>
+      <div class="section5-box2">
+        <a href="mailto: omarsoliman2000@gmail.com" id="section5-mail-icon">
+          <i class="fa-solid fa-envelope-open-text" id="section5-mail-animation"></i>
+        </a>
+
+        <a href="mailto: omarsoliman2000@gmail.com" id="section5-mail">
+         <h1>sales@zidmas.com</h1>
+        </a>
+        <p id="section5-box2-p">Have something in your mind let us know</p>
+      </div>
+      <div class="contactform">
+
+        <div class="contactform-cont">
+          <form action="#">
+            <div class="group">      
+             <input type="text" required>
+             <span class="highlight"></span>
+             <span class="bar"></span>
+             <label>Name</label>
+           </div>
+
+            <div class="group">      
+             <input type="text" required>
+             <span class="highlight"></span>
+             <span class="bar"></span>
+             <label>Company Name</label>
+            </div>
+      
+            <div class="group">      
+             <input type="email" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Email</label>
+            </div>
+
+            <div class="group">      
+             <input type="text" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Phone Number</label>
+            </div>
+            <div class="group"> 
+
+              <select id="services-select" name="service" form="service-form" >
+                <option value="0" selected disabled>Choose From Our Services</option>
+                <option value="1">Search Engine optimization</option>
+                <option value="2">Search Engine Marketing</option>
+                <option value="3">Web Development & Design </option>
+                <option value="4">Social Media Markering</option>
+                <option value="5">E-Mail Marketing</option>
+                <option value="6">Mobile App development</option>
+              </select>  
+            </div>
+
+            <textarea placeholder="Write A Note"></textarea>
+            <input type="submit" value="Send Message" id="send">
+      </form>
+        </div>     
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="footer">
+    
+
+    <div class="footer-cont">
+      <div class="footer-sec">
+        <h1 id="footer-sec-head">About Us</h1>
+        <ul id="footer-sec-ul"> 
+          <li><a href="#">Company Profile</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Affiliate Program</a></li>
+        </ul>        
+      </div>
+
+      <div class="footer-sec">
+        <h1 id="footer-sec-head">Support</h1>
+        <ul id="footer-sec-ul">
+          <li><a href="#">Frequently Asked</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Web Development & Design </a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>  
+      </div>
+      <div class="footer-sec">
+        <h1 id="footer-sec-head">Our Services</h1>
+        <ul id="footer-sec-ul">
+          <li><a href="../seo/index.html">Search Engine Optimization</a></li>
+          <li><a href="../sem/index.html">Search Engine Marketing</a></li>
+          <li><a href="../web/index.html">Web Development & Design </a></li>
+          <li><a href="../smm/index.html">Social Media Markering</a></li>
+          <li><a href="../email/index.html">E-Mail Marketing</a></li>
+          <li><a href="../app/index.html">Mobile App development</a></li>
+          <li><a href="#">Reservation QR Systems </a></li>
+        </ul>    
+      </div>
+
+      <div class="footer-sec">
+
+        <h1 id="footer-sec-head">ZIDMA Solutions</h1>
+        <p>We intend to provide our clients with the best customized and practical solutions to expand their online and offline presence and achieve their business goals through providing smart solutions, a creative team, friendly service, fast delivery, and ongoing support.</p>
+
+        <ul id="footer-social">
+          <a href="https://www.facebook.com/"><li><i class="fa-brands fa-square-facebook"></i></li></a>
+          <a href="https://www.instagram.com/"><li><i class="fa-brands fa-instagram instagram"></i></li></a>
+          <a href="#"><li><i class="fa-brands fa-whatsapp"></i></li></a>
+          <a href="#"><li><i class="fa-brands fa-behance"></i></li></a>
+          <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a>
+        </ul>
+
+      </div>
+      
+    </div>
+
+  </div>
+  <div class="copyright-footer">
+    <p> © Copyrights 2020 ZIDMA Solutions All rights reserved.</p>
+  </div>
+</body>
+</html>

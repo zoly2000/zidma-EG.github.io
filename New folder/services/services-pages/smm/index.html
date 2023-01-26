@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Marketing</title>
+    <link rel = "icon" href = "../../../icon.png" type = "image/x-icon">
+
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="section1.css">
+    <link rel="stylesheet" href="section2.css">
+    <link rel="stylesheet" href="section3.css">
+    <link rel="stylesheet" href="section4.css">
+
+    <link rel="stylesheet" href="../../../footer.css">
+    <link rel="stylesheet" href="../../../loader.css">
+
+
+    <link rel="stylesheet" href="smm-responsive.css">
+
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/a5c7b19376.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong:wght@500&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+</head>
+<body>
+  <div class="loader">
+      <img src="../../../zidma logo sticky.png">
+    </div>
+    <script>
+      document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                  "body").style.visibility = "hidden";
+                document.querySelector(
+                  ".loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                  ".loader").style.display = "none";
+                document.querySelector(
+                  "body").style.visibility = "visible";
+            }
+        };
+    </script>
+
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="#">
+        <img src="../../../zidma white.png" id="logoImg">
+        <img src="../../../zidma logo sticky.png" id="logoImgSticky">
+      </a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times" id="zoli"></i>
+        </div>
+        <li><a href="../../../index.html">Home</a></li>
+        <li><a href="../../index.html">Services</a></li>
+        <li><a href="../../../about/index.html">About-Us</a></li>
+        <li><a href="../../../contact/index.html">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu-list");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+      body.classList.add("disabledScroll");
+    }
+    cancelBtn.onclick = ()=>{
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      body.classList.remove("disabledScroll");
+    }
+
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+    <div class="section1">
+      <img src="smm-bg.png">
+      <h1  id="section1-header">Social Media Marketing</h1>
+      <h6 id="section1-links">
+        <a href="../../../index.html">Home </a>
+        <p>&nbsp; > &nbsp;</p>
+        <a href="../../index.html">Our Services </a>
+        <p>&nbsp; >> &nbsp;Social Media Marketing</p>
+      </h6>
+    </div>
+    <div class="section2">
+      <div class="section2-top-cards">
+        <div class="section2-top-card">
+          <h1 id="section2-top-card-h1">THE COMPLETE SOCIAL MEDIA MARKETING SOLUTION</h1>
+          <h1 id="section2-top-card-h2">Social Media Marketing Refers To<br> The Process Of Gaining Traffic</h1>
+          <p id="section2-top-card-p">Social media marketing is a powerful way for businesses of all sizes to reach prospects and customers. People discover, learn about, follow, and shop from brands on social media, so if you’re not on platforms like Facebook, Instagram, and LinkedIn, you’re missing out! Great marketing on social media can bring remarkable success to your business, creating devoted brand advocates and even driving leads and sales.</p>
+        </div>
+        <div class="section2-top-card">
+          <img src="Social-Media-Traffic-Image.png">
+        </div>
+      </div>
+      <div class="section2-mid-cards">
+        <div class="section2-mid-card">
+          <img src="social-gif.gif">
+        </div>
+
+        <div class="section2-mid-card">
+          <h1 id="section2-mid-card-h1">We offer marketing services to startups and small enterprises seeking a digital media partner</h1>
+          <h1 id="section2-mid-card-h2">Every minute you don't have an online presence on social media, you are losing a potential client to your competitors.</h1>
+        </div>
+      </div>
+    </div>
+    <div class="section3">
+      <h1 id="section3-h1">MANAGE MULTIPLE SOCIAL CHANNELS</h1>
+      <h1 id="section3-h2">Grow Your Brand's Presence On The Social<br>Networks That Matter Most</h1>
+      <img src="Social-Media-Brand-Image.png" id="section3-img">
+      <div class="section3-facebook">
+        <div class="section3-facebook-left-up">
+          <i class="fa-brands fa-square-facebook"></i>
+          <h1>High Performance </h1>
+          <p>Because we are one of Egypt's top Facebook marketing agencies, we can help you gain attention and brand exposure. You'll stand out among your competitors with our extensive and comprehensive social media marketing services, capturing the attention of the proper audience and bringing them to your fantastic company. </p>
+        </div>
+        <div class="section3-facebook-right-up" id="zozo">
+          <img src="fb1.gif">
+        </div>
+        <div class="section3-facebook-left-down">
+          <i class="fa-solid fa-crosshairs"></i>
+          <h1>Targeted Audiences </h1>
+          <p>We use the platform to target certain demographics that are the most relevant to your goals. To help you get the most out of your advertising budget, we target audiences with the proper marketing message and take the entire management of the campaign. Allow our team to function as an extension of your own and reap the benefits. </p>
+        </div>
+        <div class="section3-facebook-right-down">
+          <img src="FB-Phone-GIF.gif">
+        </div>
+        <div class="section3-down">
+          <div class="section3-down-card">
+            <i class="fa-brands fa-square-facebook" id="section3-card-fb"></i>
+            <h1>Page Management </h1>
+            <p>Our Team will help you by performing the following steps to specify managing clients facebook fan page</p>
+          </div>
+          <div class="section3-down-card">
+            <i class="fa-brands fa-square-facebook" id="section3-card-fb"></i>
+            <h1>Ads Management  </h1>
+            <p>In general, Facebook shows individuals advertising that are attractive and relevant to their needs, therefore Vocus Team will define this service to direct customers’ ads to targeted users using Facebook marketing services.</p>
+          </div>
+        </div>
+      </div>
+      <div class="section3-ig">
+        <div class="section3-ig-card">
+          <img src="ig.gif">
+        </div>
+        <div class="section3-ig-card">
+          <i class="fa-brands fa-instagram"></i>
+          <h1 id="section3-ig-card-h1">Visuals attract customers</h1>
+          <p id="section3-ig-card-p">Since people can easily interpret visuals, Instagram greatly impacts new businesses. This app focuses on grabbing the attention of myriads of eyes. Of course, you also need to display videos and photos, but that’s an easy way to promote a brand. You can also make your account visually attractive by using many filters.</p>
+          <i class="fa-solid fa-ranking-star"></i>
+          <h1 id="section3-ig-card-h2">Effective Campaigns </h1>
+          <p id="section3-ig-card-p2">With smart campaigns that develop an emotional connection and assist them grasp the value your company can deliver to them, social media agencies in Egypt target Instagram users most likely to be interested in your services.</p>
+        </div>
+      </div>
+      <div class="section3-ig-down">
+          <div class="section3-ig-down-card">
+            <h1 id="section3-ig-down-card-h1"><i class="fa-solid fa-coins"></i> &nbsp; &nbsp;80% of your cost of lead generation can be saved with social media advertising as it only costs just a fraction of the cost per lead compared to traditional ways like commercial, radio, and newspaper.</h1>
+
+            <h1 id="section3-ig-down-card-h2"><i class="fa-solid fa-chart-line"></i> &nbsp; &nbsp; More and more opportunities for sales will increase with the increasing engagement of customers in your brand. Having many followers play a physiological role in making your brand important as well as authentic.</h1>
+          </div>
+          <div class="section3-ig-down-card">
+            <img src="ig2.gif">
+          </div>
+          <div class="section3-ig-down-card">
+            <h1 id="section3-ig-down-card-h1"><i class="fa-solid fa-handshake-simple"></i>&nbsp; &nbsp;More and more opportunities for sales will increase with the increasing engagement of customers in your brand. Having many followers play a physiological role in making your brand important as well as authentic.</h1>
+            <h1 id="section3-ig-down-card-h2"><i class="fa-solid fa-people-group"></i> &nbsp; &nbsp;Reaching out to customers and knowing them better is a key factor in promoting your business. You can easily learn about audience preferences, dominant language spoken, interests, gender, age, etc. It greatly assists your strategy in designing campaigns and product offers, therefore, benefits you in a better return on investment.</h1>
+          </div>
+      </div>
+      <div class="section3-twitter">
+        <div class="section3-twitter-card">
+          <i class="fa-brands fa-twitter"></i>
+          <h1>Build brand personality and awareness</h1>
+          <p>One of the top benefits of Twitter for business is that it lets you share information quickly and start conversations with your target audience. In turn, your audience would find your Tweets and content valuable and ideally, even share with their follow</p>
+        </div>
+        <div class="section3-twitter-card">
+          <img src="twitter-gif.gif">
+        </div>
+        <div class="section3-twitter-card">
+          <i class="fa-regular fa-comments"></i>
+          <h1>Deliver customer support and gather feedback</h1>
+          <p>According to Rice, “The most advanced brands see Twitter as a vital marketing, customer care and market research medium that can provide valuable insights on every aspect of their business.”And rightly so. The platform makes it easy for customers to reach out to brands and provide their feedback or ask for help..</p>
+        </div>
+      </div>
+      <div class="section3-tiktok">
+        <div class="section3-tiktok-card">
+          <h1 id="section3-tiktok-card-h1">TikTok Marketing Strategy</h1>
+          <p id="section3-tiktok-card-p1">TikTok is the fastest growing social channel, even recently surpassing YouTube in average watch time on Android devices. It has also become the first non-Facebook app on the app store to reach 3 billion downloads.TikTok presents a game-changing opportunity for the digital marketing landscape. The main challenges are that there is much to learn about the short-form, lo-fi video format, and many of the best practices marketers are familiar with from other social channels do not apply.</p>
+          <div class="section3-tiktok-card-circle"><i class="fa-brands fa-tiktok"></i></div>
+          <h1 id="section3-tiktok-card-h2">Increase brand awareness</h1>
+          <p id="section3-tiktok-card-p2">TikTok offers opportunities for increased brand awareness. A key method for growing brand awareness on the platform is the use of hashtags, which allows content creators to jump on popular trends and gain significant traction from their posts.</p>  
+        </div>
+        <div class="section3-tiktok-card">
+          <img src="tiktik.gif">
+        </div>
+      </div>
+      <div class="section3-snapchat">
+        <div class="section3-snapchat-card">
+          <img src="snap.gif">
+        </div>
+        <div class="section3-snapchat-card">
+          <i class="fa-brands fa-snapchat"></i>
+          <h1>Snapchat Services</h1>
+          <p>In the digital world, Snapchat marketing services have become a desirable commodity. Many companies are realising the value of Snapchat marketing as a fun way to reach out to their target demographic. Despite this, many marketers regard Snapchat as a complex and baffling medium. As a result, its inclusion in a larger social media strategy is frequently overlooked. </p>
+        </div>
+      </div>
+      <div class="section3-youtube">
+        <div class="section3-youtube-cards">
+          <h1 id="section3-youtube-cards-h1">Youtube Services</h1>
+          <h2>Use Youtube Ads to reach out to them.</h2>
+          <p>Every day, YouTube attracts 30 million users. With the appropriate strategy, you can skyrocket your sales. With the correct Youtube advertising services, you may convert at a higher rate. Each of our campaigns at Vocus Digital Agency is designed to achieve the greatest potential results.</p>
+          <h1 id="section3-youtube-cards-h2">Services we offer</h1>
+          <ul>
+            <li>YouTube can help you make money.</li>
+            <li>The creation of content.</li>
+            <li>Advanced Channel Management on YouTube.</li>
+            <li>Consultation on content.</li>
+            <li>Create a YouTube channel.</li>
+            <li>Curation of content.</li>
+          </ul>
+        </div>
+        <div class="section3-youtube-cards">
+          <img src="youtube.gif">
+        </div>
+      </div>
+      <div class="section3-youtube-down">
+        <div class="section3-youtube-cards-down">
+          <i class="fa-solid fa-photo-film"></i>
+          <h1> YouTube Channel Development </h1>
+          <p>With over 2.5 billion monthly active users, YouTube is the second largest social media platform in the world. But YouTube’s large user base isn’t the only reason brands shouldn’t sleep on including the platform in their marketing strategy.</p>
+        </div>
+        <div class="section3-youtube-cards-down">
+          <i class="fa-solid fa-users"></i>
+          <h1>Reach a large audience</h1>
+          <p>YouTube has an incredibly large, active user base. Publishing quality content consistently and partnering with influential creators in your niche can get you massive exposure and traffic.</p>
+        </div>
+      </div>
+    </div>
+    <div class="section4">
+      <div class="section4">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="white" fill-opacity="1" d="M0,0L30,10.7C120,21,240,43,360,80C480,117,600,171,720,176C840,181,960,139,1080,117.3C1200,96,1320,96,1380,96L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">       </path>
+    </svg>
+
+    <h1 id="section4-head"> Start Your Project .</h1>
+    <div class="section4-box-cont">
+
+      <div class="section4-box1">
+        <a href="https://wa.me/+201118567904?text=Hello" id="section4-meassage">
+          <i class="fa-brands fa-whatsapp" id="section4-wapp-animation"></i>
+        </a>
+        <a href="tel:+201025087222">
+          <h1 id="section4-phone-number">(+20) 102 5087 222</h1>
+        </a>
+        <p id="section4-box1-p">Have any enquiries don't hesitate to messege or give us a call</p>
+      </div>
+      <div class="section4-box2">
+        <a href="mailto: omarsoliman2000@gmail.com" id="section4-mail-icon">
+          <i class="fa-solid fa-envelope-open-text" id="section4-mail-animation"></i>
+        </a>
+
+        <a href="mailto: omarsoliman2000@gmail.com" id="section4-mail">
+         <h1>sales@zidmas.com</h1>
+        </a>
+        <p id="section4-box2-p">Have something in your mind let us know</p>
+      </div>
+      <div class="contactform">
+
+        <div class="contactform-cont">
+          <form action="#">
+            <div class="group">      
+             <input type="text" required>
+             <span class="highlight"></span>
+             <span class="bar"></span>
+             <label>Name</label>
+           </div>
+
+            <div class="group">      
+             <input type="text" required>
+             <span class="highlight"></span>
+             <span class="bar"></span>
+             <label>Company Name</label>
+            </div>
+      
+            <div class="group">      
+             <input type="email" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Email</label>
+            </div>
+
+            <div class="group">      
+             <input type="text" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Phone Number</label>
+            </div>
+            <div class="group"> 
+
+              <select id="services-select" name="service" form="service-form" >
+                <option value="0" selected disabled>Choose From Our Services</option>
+                <option value="1">Search Engine optimization</option>
+                <option value="2">Search Engine Marketing</option>
+                <option value="3">Web Development & Design </option>
+                <option value="4">Social Media Markering</option>
+                <option value="5">E-Mail Marketing</option>
+                <option value="6">Mobile App development</option>
+              </select>  
+            </div>
+
+            <textarea placeholder="Write A Note"></textarea>
+            <input type="submit" value="Send Message" id="send">
+      </form>
+        </div>     
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="footer">
+    
+
+    <div class="footer-cont">
+      <div class="footer-sec">
+        <h1 id="footer-sec-head">About Us</h1>
+        <ul id="footer-sec-ul"> 
+          <li><a href="#">Company Profile</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Affiliate Program</a></li>
+        </ul>        
+      </div>
+
+      <div class="footer-sec">
+        <h1 id="footer-sec-head">Support</h1>
+        <ul id="footer-sec-ul">
+          <li><a href="#zozo">Frequently Asked</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Web Development & Design </a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>  
+      </div>
+      <div class="footer-sec">
+        <h1 id="footer-sec-head">Our Services</h1>
+        <ul id="footer-sec-ul">
+          <li><a href="../seo/index.html">Search Engine Optimization</a></li>
+          <li><a href="../sem/index.html">Search Engine Marketing</a></li>
+          <li><a href="../web/index.html">Web Development & Design </a></li>
+          <li><a href="../smm/index.html">Social Media Markering</a></li>
+          <li><a href="../email/index.html">E-Mail Marketing</a></li>
+          <li><a href="../app/index.html">Mobile App development</a></li>
+          <li><a href="#">Reservation QR Systems </a></li>
+        </ul>    
+      </div>
+
+      <div class="footer-sec">
+
+        <h1 id="footer-sec-head">ZIDMA Solutions</h1>
+        <p>We intend to provide our clients with the best customized and practical solutions to expand their online and offline presence and achieve their business goals through providing smart solutions, a creative team, friendly service, fast delivery, and ongoing support.</p>
+
+        <ul id="footer-social">
+          <a href="https://www.facebook.com/"><li><i class="fa-brands fa-square-facebook"></i></li></a>
+          <a href="https://www.instagram.com/"><li><i class="fa-brands fa-instagram instagram"></i></li></a>
+          <a href="#"><li><i class="fa-brands fa-whatsapp"></i></li></a>
+          <a href="#"><li><i class="fa-brands fa-behance"></i></li></a>
+          <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a>
+        </ul>
+
+      </div>
+      
+    </div>
+
+  </div>
+  <div class="copyright-footer">
+    <p> © Copyrights 2020 ZIDMA Solutions All rights reserved.</p>
+  </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+.section-1{
+	width: 100%;
+	height: 650px; 
+}
+
+#banner{
+	width: 100%;
+	height: 650px;
+	position: absolute;
+	top: 0%;
+}
+
+
+.design{
+	max-width: 100%;
+
+}
+
+#section-1-mobile{
+	width: 600px;
+	position: absolute;
+	top: 18%;
+	left: 45%;
+	-webkit-animation: moverbottom 2s infinite  alternate;
+    animation: moverbottom 2s infinite  alternate;
+    
+}
+
+#section-1-shasha{
+	width: 600px;
+	position: absolute;
+	top: 18%;
+	left: 45%;
+	-webkit-animation: movertop 2s infinite  alternate;
+    animation: movertop 2s infinite  alternate;
+}
+
+#section-1-shadow{
+	width: 600px;
+	position: absolute;
+	top: 20%;
+	left: 44%;
+	-webkit-animation: movertop 2s infinite  alternate;
+    animation: movertop 2s infinite  alternate;
+}
+
+#section-1-box-top{
+	width: 600px;
+	position: absolute;
+	top: 14.4%;
+	left: 44%;
+	-webkit-animation: moverbottom 2s infinite  alternate;
+    animation: moverbottom 2s infinite  alternate;
+}
+
+#section-1-box-bottom{
+	width: 600px;
+	position: absolute;
+	top: 18%;
+	left: 45%;
+	-webkit-animation: moverbuttom 2s infinite  alternate;
+    animation: moverbuttom 2s infinite  alternate;
+}
+
+#box-shadow-top{
+	width: 600px;
+	position: absolute;
+	top: 19.5%;
+	left: 48.5%;
+	-webkit-animation: movertop 2s infinite  alternate;
+    animation: movertop 2s infinite  alternate;
+}
+
+#box-shadow-bottom{
+	width: 600px;
+	position: absolute;
+	top: 18%;
+	left: 45%;
+	-webkit-animation: movertop 2s infinite  alternate;
+    animation: movertop 2s infinite  alternate;
+}
+
+#section1-header{
+	color: white;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    padding-top: 15%;
+    padding-left: 4%;
+    font-weight: 600;
+}
+
+#bold-span{
+	font-weight:800;
+	font-family: 'popins', sans-serif;
+}
+
+#section1-paragraph{
+	width: 640px;
+	color: white;
+	font-size: 19px;
+	position: absolute;
+	padding-top: 26%;
+    padding-left: 4%;
+}
+
+.section-1-button{
+	width: 175px;
+	height: 50px;
+	border-radius: 50px;
+	border: 1px solid white;
+    text-align: center;
+    padding: 12.5px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.section-1-button:hover{
+	background: rgb(131,64,255);
+    background: linear-gradient(90deg, rgba(131,64,255,1) 0%, rgba(87,0,255,1) 100%); 
+    border: none;
+}
+
+.section-1 a{
+	position: absolute;
+	padding-top: 35%;
+    padding-left: 4%;
+    text-decoration: none;
+}
+
+@-webkit-keyframes movertop {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes movertop {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+
+
+@-webkit-keyframes moverbottom {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(10px); 
+    }
+}
+@keyframes moverbottom {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(10px); }
+}
+
+
+
+

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEM</title>
+    <link rel = "icon" href = "../../../icon.png" type = "image/x-icon">
+
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="section1.css">
+    <link rel="stylesheet" href="section2.css">
+    <link rel="stylesheet" href="section3.css">
+    <link rel="stylesheet" href="section4.css">
+
+    <link rel="stylesheet" href="../../../footer.css">
+    <link rel="stylesheet" href="../../../loader.css">
+
+
+    <link rel="stylesheet" href="sem-responsive.css">
+
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/a5c7b19376.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong:wght@500&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+</head>
+<body>
+  <div class="loader">
+      <img src="../../../zidma logo sticky.png">
+    </div>
+    <script>
+      document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                  "body").style.visibility = "hidden";
+                document.querySelector(
+                  ".loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                  ".loader").style.display = "none";
+                document.querySelector(
+                  "body").style.visibility = "visible";
+            }
+        };
+    </script>
+
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="#">
+        <img src="../../../zidma white.png" id="logoImg">
+        <img src="../../../zidma logo sticky.png" id="logoImgSticky">
+      </a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times" id="zoli"></i>
+        </div>
+        <li><a href="../../../index.html">Home</a></li>
+        <li><a href="../../index.html">Services</a></li>
+        <li><a href="../../../about/index.html">About-Us</a></li>
+        <li><a href="../../../contact/index.html">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu-list");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+      body.classList.add("disabledScroll");
+    }
+    cancelBtn.onclick = ()=>{
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      body.classList.remove("disabledScroll");
+    }
+
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+    <div class="section1">
+      <img src="sem-bg.png">
+      <h1  id="section1-header">Search Engine Marketing</h1>
+      <h6 id="section1-links">
+        <a href="../../../index.html">Home </a>
+        <p>&nbsp; > &nbsp;</p>
+        <a href="../../index.html">Our Services </a>
+        <p>&nbsp; >> &nbsp;SEM</p>
+      </h6>
+
+    </div>
+    <div class="section2">
+      <div class="section2-top-cards">
+        <div class="section2-top-card">
+          <img src="Keyword-Research.png">
+          <h1>Keyword Research</h1>
+          <p>words and phrases describing your product or service that you choose to help determine when and where your ad will be displayed in search engine results.</p>
+        </div>
+
+        <div class="section2-top-card">
+          <img src="Content-Optimization.png">
+          <h1>Content Optimization</h1>
+          <p>Ensuring that your content has the best possible chance of achieving its intended goal, whether that’s to rank in a search engine or to turn leads into conversions.</p>
+        </div>
+
+        <div class="section2-top-card">
+          <img src="Competitive-Analysis.png" id="section2-card-comAna">
+          <h1>Competitive Analysis</h1>
+          <p>competitive analysis enables you to understand the companies also bidding on the same keywords and categories you are targeting in paid search.</p>
+        </div>
+
+        <div class="section2-top-card">
+          <img src="Link-Building.png" id="section2-card-linkb">
+          <h1>Link Building</h1>
+          <p>Links are one of the primary ways that search engine algorithms determine the relevance of a page. Having a good number of links to a website indicates that the content is there is valuable.</p>
+        </div>
+
+      </div>
+      <div class="section2-mid-cards">
+        <div class="section2-mid-card">
+          <img src="wsem.png">
+        </div>
+        <div class="section2-mid-card">
+          <h1>What is Search Engine Marketing?</h1>
+          <p>Search engine marketing (SEM) includes both organic and paid digital marketing techniques such as Search Engine Optimization (SEO), Social Media Optimization (SMO), Search Engine Advertising (SEA)</p>
+        </div>
+      </div>
+
+      <div class="section2-end-cards">
+
+        <div class="section2-end-card">
+          <h1>SEM Management</h1>
+          <p>Due to multiple companies and organizations vying for the same target groups, growing a business in today’s generation can be challenging. Many organizations must sell their services and products online in order to attract new customers. You may also look for Google ad companies in Egypt to reach your target market. By employing search engines through both paid and unpaid marketing activities, search engine marketing is an effective contributor to growing a business by generating online traffic, increasing revenues, and lowering acquisition costs.</p>
+        </div>
+        <div class="section2-end-card">
+          <img src="sem-gif.gif">
+        </div>
+      </div>
+    </div>
+
+    <div class="section3">
+
+      <div class="section3-cards-cont">
+      
+      <div class="section3-card">
+        <div class="section3-card-box">
+          <i class="fa-solid fa-magnifying-glass-plus"></i> 
+        </div>
+        
+        <p>With the use of search engine marketing, advertisers and marketers may advertise their products and services. Search engine marketing is a fantastic strategy to grow your company. Keywords are said to be the most important aspect of a search engine marketing campaign. </p>
+        
+      </div>
+
+      <div class="section3-card">
+        <img src="googlr-colors.gif" id="google-colors">
+      </div>
+
+      <div class="section3-card">
+        <div class="section3-card-box" id="section3-card-box-bg3">
+          <i class="fa-solid fa-crosshairs"></i>
+        </div>
+       
+        <p> Advertisers must choose keywords that are relevant to their business and generate revenue. He or she can then bid on those keywords in order for their website to appear in search engine results pages. As a result, anytime users are looking for specific products or services. From a business standpoint, it lets advertisers to transform user queries into leads.</p>
+        
+      </div>
+
+      <div class="section3-card">
+        <div class="section3-card-box" id="section3-card-box-bg4">
+          <i class="fa-solid fa-thumbs-up"></i>
+        </div>
+        
+        <p>In a highly competitive worldwide market, search engine marketing is considered one of the most successful techniques to developing digital marketing strategies for promoting your product, services, and growing your organisation online. The primary goal of search engine marketing is to increase the amount of traffic to your website, which will help you generate more leads.</p>
+        
+      </div>
+
+      <div class="section3-card">
+        <img src="good-google.gif">
+      </div>
+
+      <div class="section3-card">
+        <div class="section3-card-box" id="section3-card-box-bg6">
+          <i class="fa-brands fa-google"></i>
+        </div>
+        
+        <p>In the field of digital marketing, Search Engine Marketing is also known as PPC. Pay Per Click (PPC) stands for Pay Per Click. In today's world, online promotion of your products and services has become a critical component of any company's survival. Marketers are allowed to advertise items and expand their businesses utilizing paid adverts via various search engines such as Google, Bing, and Yahoo to appear on search engine results pages under this marketing technique.</p>
+        
+      </div>
+
+
+    </div>
+      
+    </div>
+      <div class="section4">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="white" fill-opacity="1" d="M0,0L30,10.7C120,21,240,43,360,80C480,117,600,171,720,176C840,181,960,139,1080,117.3C1200,96,1320,96,1380,96L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">       </path>
+    </svg>
+
+    <h1 id="section4-head"> Start Your Project .</h1>
+    <div class="section4-box-cont">
+
+      <div class="section4-box1">
+        <a href="https://wa.me/+201118567904?text=Hello" id="section4-meassage">
+          <i class="fa-brands fa-whatsapp" id="section4-wapp-animation"></i>
+        </a>
+        <a href="tel:+201025087222">
+          <h1 id="section4-phone-number">(+20) 102 5087 222</h1>
+        </a>
+        <p id="section4-box1-p">Have any enquiries don't hesitate to messege or give us a call</p>
+      </div>
+      <div class="section4-box2">
+        <a href="mailto: omarsoliman2000@gmail.com" id="section4-mail-icon">
+          <i class="fa-solid fa-envelope-open-text" id="section4-mail-animation"></i>
+        </a>
+
+        <a href="mailto: omarsoliman2000@gmail.com" id="section4-mail">
+         <h1>sales@zidmas.com</h1>
+        </a>
+        <p id="section4-box2-p">Have something in your mind let us know</p>
+      </div>
+      <div class="contactform">
+
+        <div class="contactform-cont">
+          <form action="#">
+            <div class="group">      
+             <input type="text" required>
+             <span class="highlight"></span>
+             <span class="bar"></span>
+             <label>Name</label>
+           </div>
+
+            <div class="group">      
+             <input type="text" required>
+             <span class="highlight"></span>
+             <span class="bar"></span>
+             <label>Company Name</label>
+            </div>
+      
+            <div class="group">      
+             <input type="email" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Email</label>
+            </div>
+
+            <div class="group">      
+             <input type="text" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Phone Number</label>
+            </div>
+            <div class="group"> 
+
+              <select id="services-select" name="service" form="service-form" >
+                <option value="0" selected disabled>Choose From Our Services</option>
+                <option value="1">Search Engine optimization</option>
+                <option value="2">Search Engine Marketing</option>
+                <option value="3">Web Development & Design </option>
+                <option value="4">Social Media Markering</option>
+                <option value="5">E-Mail Marketing</option>
+                <option value="6">Mobile App development</option>
+              </select>  
+            </div>
+
+            <textarea placeholder="Write A Note"></textarea>
+            <input type="submit" value="Send Message" id="send">
+      </form>
+        </div>     
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="footer">
+    
+
+    <div class="footer-cont">
+      <div class="footer-sec">
+        <h1 id="footer-sec-head">About Us</h1>
+        <ul id="footer-sec-ul"> 
+          <li><a href="#">Company Profile</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Affiliate Program</a></li>
+        </ul>        
+      </div>
+
+      <div class="footer-sec">
+        <h1 id="footer-sec-head">Support</h1>
+        <ul id="footer-sec-ul">
+          <li><a href="#">Frequently Asked</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Web Development & Design </a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>  
+      </div>
+      <div class="footer-sec">
+        <h1 id="footer-sec-head">Our Services</h1>
+        <ul id="footer-sec-ul">
+          <li><a href="../seo/index.html">Search Engine Optimization</a></li>
+          <li><a href="../sem/index.html">Search Engine Marketing</a></li>
+          <li><a href="../web/index.html">Web Development & Design </a></li>
+          <li><a href="../smm/index.html">Social Media Markering</a></li>
+          <li><a href="../email/index.html">E-Mail Marketing</a></li>
+          <li><a href="../app/index.html">Mobile App development</a></li>
+          <li><a href="#">Reservation QR Systems </a></li>
+        </ul>    
+      </div>
+
+      <div class="footer-sec">
+
+        <h1 id="footer-sec-head">ZIDMA Solutions</h1>
+        <p>We intend to provide our clients with the best customized and practical solutions to expand their online and offline presence and achieve their business goals through providing smart solutions, a creative team, friendly service, fast delivery, and ongoing support.</p>
+
+        <ul id="footer-social">
+          <a href="https://www.facebook.com/"><li><i class="fa-brands fa-square-facebook"></i></li></a>
+          <a href="https://www.instagram.com/"><li><i class="fa-brands fa-instagram instagram"></i></li></a>
+          <a href="#"><li><i class="fa-brands fa-whatsapp"></i></li></a>
+          <a href="#"><li><i class="fa-brands fa-behance"></i></li></a>
+          <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a>
+        </ul>
+
+      </div>
+      
+    </div>
+
+  </div>
+  <div class="copyright-footer">
+    <p> © Copyrights 2020 ZIDMA Solutions All rights reserved.</p>
+  </div>
+  </body>
+</html>

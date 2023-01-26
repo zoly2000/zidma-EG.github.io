@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Mail Marketing</title>
+    <link rel = "icon" href = "../../../icon.png" type = "image/x-icon">
+
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="section1.css">
+    <link rel="stylesheet" href="section2.css">
+    <link rel="stylesheet" href="section3.css">
+    
+
+    <link rel="stylesheet" href="../../../footer.css">
+    <link rel="stylesheet" href="../../../loader.css">
+
+
+    <link rel="stylesheet" href="mail-responsive.css">
+
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/a5c7b19376.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong:wght@500&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+</head>
+<body>
+  <div class="loader">
+      <img src="../../../zidma logo sticky.png">
+    </div>
+    <script>
+      document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                  "body").style.visibility = "hidden";
+                document.querySelector(
+                  ".loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                  ".loader").style.display = "none";
+                document.querySelector(
+                  "body").style.visibility = "visible";
+            }
+        };
+    </script>
+
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="#">
+        <img src="../../../zidma white.png" id="logoImg">
+        <img src="../../../zidma logo sticky.png" id="logoImgSticky">
+      </a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times" id="zoli"></i>
+        </div>
+        <li><a href="../../../index.html">Home</a></li>
+        <li><a href="../../index.html">Services</a></li>
+        <li><a href="../../../about/index.html">About-Us</a></li>
+        <li><a href="../../../contact/index.html">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu-list");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+      body.classList.add("disabledScroll");
+    }
+    cancelBtn.onclick = ()=>{
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      body.classList.remove("disabledScroll");
+    }
+
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+    <div class="section1">
+      <img src="email-bg.png">
+      <h1  id="section1-header">E-Mail Marketing</h1>
+      <h6 id="section1-links">
+        <a href="../../../index.html">Home </a>
+        <p>&nbsp; > &nbsp;</p>
+        <a href="../../index.html">Our Services </a>
+        <p>&nbsp; >> &nbsp;E-Mail Marketing</p>
+      </h6>
+    </div>
+    <div class="section2">
+      <div class="section2-email-up">
+        <div class="section2-email-cards-up">
+          <h1>Why Email Marketing Is Important</h1>
+          <p>Email marketing is important for small businesses because it’s a marketing workhorse.Not only does it help you to keep in touch with those that want to hear from you — keeping you top of mind — but it also allows you to educate your readers, drive traffic, conduct surveys, share updates, make announcements, etc.What I’m trying to say is that email marketing allows small businesses to do lots of different things, all within one channel. And, it still has the highest ROI of any marketing strategy or channel.Honestly, the importance of small business email marketing really can’t be overstated. If you’re not yet convinced, just take a look at the following benefits of email marketing.</p>
+        </div>
+        <div class="section2-email-cards-up">
+          <img src="emial-magnet.png">
+        </div>
+      </div>
+
+      <div class="section2-email-mid">
+        <div class="section2-email-cards-mid">
+          <i class="fa-solid fa-envelope"></i>
+          <h1 id="section2-email-cards-mid-h1"> personalized content</h1>
+          <p id="section2-email-cards-mid-p1">Email marketing allows you to segment your customers into different lists based on their preferences to send highly personalized content. From crafting the perfect subject lines to images that resonate with your customer, and valuable content that helps your audience, email is the perfect channel to deliver those personal-feeling messages.</p>
+
+          <i class="fa-solid fa-certificate"></i>
+          <h1 id="section2-email-cards-mid-h2"> Increase brand recognition</h1>
+          <p id="section2-email-cards-mid-p2">Email marketing allows you to segment your customers into different lists based on their preferences to send highly personalized content. From crafting the perfect subject lines to images that resonate with your customer, and valuable content that helps your audience, email is the perfect channel to deliver those personal-feeling messages.</p>
+        </div>
+        <div class="section2-email-cards-mid">
+          <img src="email-marketing.gif" id="section2-email-cards-mid-img1">
+          <img src="email-gify2.gif" id="section2-email-cards-mid-img2">
+        </div>
+        <div class="section2-email-cards-mid">
+          <i class="fa-solid fa-money-bill-trend-up"></i>
+          <h1 id="section2-email-cards-mid-h1"> Improve sales</h1>
+          <p id="section2-email-cards-mid-p1">Email marketing allows you to segment your customers into different lists based on their preferences to send highly personalized content. From crafting the perfect subject lines to images that resonate with your customer, and valuable content that helps your audience, email is the perfect channel to deliver those personal-feeling messages.</p>
+
+          <i class="fa-solid fa-users-line"></i>
+          <h1 id="section2-email-cards-mid-h2"> stronger customer relationships</h1>
+          <p id="section2-email-cards-mid-p2">Email marketing can help to build customer relationships by providing them with information they want  — directly into their inbox on a consistent basis. When you help make your audience’s lives better, whether that be with your product or service, helpful tips, or even just a “happy birthday” gift coupon, they will learn to appreciate and trust you..</p>
+        </div>
+      </div>
+      <div class="section2-email-end">
+        <div class="section2-email-cards-end">
+          <i class="fa-solid fa-chart-line"></i>
+          <h1>Easy to measure</h1>
+          <p>Most email marketing tools offer the ability to track what happens after you have sent out your email campaign. You can track delivery rates, bounce rates, unsubscribe rates, click through rates, and open rates. This gives you a better understanding of how your email campaigns are working, which ones to tweak or which ones to get rid of altogether.</p>
+        </div>
+        <div class="section2-email-cards-end">
+          <i class="fa-solid fa-coins"></i>
+          <h1>Affordable</h1>
+          <p>Email marketing services costs $0.0006 cents, which allows you to send up to 12,000 emails a month at a significantly small cost. We offer larger monthly plans for growing businesses with up to 600,000 subscribers and high volume sender plans for anything over that. We also offer subscription services for higher-volume senders.</p>
+        </div>
+        <div class="section2-email-cards-end">
+          <i class="fa-solid fa-wifi"></i>
+          <h1>Website traffic</h1>
+          <p>Emails are a great way to get customers to visit your website. You can include relevant links to your site within your email content. You can also use your email campaigns to get customers to engage with other great pieces of content available on your website or blog.</p>
+        </div>
+        <div class="section2-email-cards-end">
+          <i class="fa-solid fa-earth-americas"></i>
+          <h1>Everyone uses it</h1>
+          <p>A Hubspot survey states that 91% of consumers use email. That alone should be enough to convince you to explore the tool.Not only can you provide them with discounts, specials, new products, and more, they can share and forward those emails to anyone they’d like. A good email marketing strategy is to encourage customers to share offers as much as possible.</p>
+        </div>
+      </div>
+    </div>
+    <div class="section3">
+      <div class="section3">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="white" fill-opacity="1" d="M0,0L30,10.7C120,21,240,43,360,80C480,117,600,171,720,176C840,181,960,139,1080,117.3C1200,96,1320,96,1380,96L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">       </path>
+    </svg>
+
+    <h1 id="section3-head"> Start Your Project .</h1>
+    <div class="section3-box-cont">
+
+      <div class="section3-box1">
+        <a href="https://wa.me/+201118567904?text=Hello" id="section3-meassage">
+          <i class="fa-brands fa-whatsapp" id="section3-wapp-animation"></i>
+        </a>
+        <a href="tel:+201025087222">
+          <h1 id="section3-phone-number">(+20) 102 5087 222</h1>
+        </a>
+        <p id="section3-box1-p">Have any enquiries don't hesitate to messege or give us a call</p>
+      </div>
+      <div class="section3-box2">
+        <a href="mailto: omarsoliman2000@gmail.com" id="section3-mail-icon">
+          <i class="fa-solid fa-envelope-open-text" id="section3-mail-animation"></i>
+        </a>
+
+        <a href="mailto: omarsoliman2000@gmail.com" id="section3-mail">
+         <h1>sales@zidmas.com</h1>
+        </a>
+        <p id="section3-box2-p">Have something in your mind let us know</p>
+      </div>
+      <div class="contactform">
+
+        <div class="contactform-cont">
+          <form action="#">
+            <div class="group">      
+             <input type="text" required>
+             <span class="highlight"></span>
+             <span class="bar"></span>
+             <label>Name</label>
+           </div>
+
+            <div class="group">      
+             <input type="text" required>
+             <span class="highlight"></span>
+             <span class="bar"></span>
+             <label>Company Name</label>
+            </div>
+      
+            <div class="group">      
+             <input type="email" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Email</label>
+            </div>
+
+            <div class="group">      
+             <input type="text" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Phone Number</label>
+            </div>
+            <div class="group"> 
+
+              <select id="services-select" name="service" form="service-form" >
+                <option value="0" selected disabled>Choose From Our Services</option>
+                <option value="1">Search Engine optimization</option>
+                <option value="2">Search Engine Marketing</option>
+                <option value="3">Web Development & Design </option>
+                <option value="4">Social Media Markering</option>
+                <option value="5">E-Mail Marketing</option>
+                <option value="6">Mobile App development</option>
+              </select>  
+            </div>
+
+            <textarea placeholder="Write A Note"></textarea>
+            <input type="submit" value="Send Message" id="send">
+      </form>
+        </div>     
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="footer">
+    
+
+    <div class="footer-cont">
+      <div class="footer-sec">
+        <h1 id="footer-sec-head">About Us</h1>
+        <ul id="footer-sec-ul"> 
+          <li><a href="#">Company Profile</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Affiliate Program</a></li>
+        </ul>        
+      </div>
+
+      <div class="footer-sec">
+        <h1 id="footer-sec-head">Support</h1>
+        <ul id="footer-sec-ul">
+          <li><a href="#">Frequently Asked</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Web Development & Design </a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>  
+      </div>
+      <div class="footer-sec">
+        <h1 id="footer-sec-head">Our Services</h1>
+        <ul id="footer-sec-ul">
+          <li><a href="../seo/index.html">Search Engine Optimization</a></li>
+          <li><a href="../sem/index.html">Search Engine Marketing</a></li>
+          <li><a href="../web/index.html">Web Development & Design </a></li>
+          <li><a href="../smm/index.html">Social Media Markering</a></li>
+          <li><a href="../email/index.html">E-Mail Marketing</a></li>
+          <li><a href="../app/index.html">Mobile App development</a></li>
+          <li><a href="#">Reservation QR Systems </a></li>
+        </ul>    
+      </div>
+
+      <div class="footer-sec">
+
+        <h1 id="footer-sec-head">ZIDMA Solutions</h1>
+        <p>We intend to provide our clients with the best customized and practical solutions to expand their online and offline presence and achieve their business goals through providing smart solutions, a creative team, friendly service, fast delivery, and ongoing support.</p>
+
+        <ul id="footer-social">
+          <a href="https://www.facebook.com/"><li><i class="fa-brands fa-square-facebook"></i></li></a>
+          <a href="https://www.instagram.com/"><li><i class="fa-brands fa-instagram instagram"></i></li></a>
+          <a href="#"><li><i class="fa-brands fa-whatsapp"></i></li></a>
+          <a href="#"><li><i class="fa-brands fa-behance"></i></li></a>
+          <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a>
+        </ul>
+
+      </div>
+      
+    </div>
+
+  </div>
+  <div class="copyright-footer">
+    <p> © Copyrights 2020 ZIDMA Solutions All rights reserved.</p>
+  </div>
+    </div>
+  </body>
+</html>

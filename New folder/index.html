@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZIDMA Solutions</title>
+    <link rel = "icon" href = "icon.png" type = "image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="section1.css">
+    <link rel="stylesheet" href="section2.css">
+    <link rel="stylesheet" href="section3.css">
+    <link rel="stylesheet" href="section4.css">
+    <link rel="stylesheet" href="section5.css">
+    <link rel="stylesheet" href="section6.css">
+    <link rel="stylesheet" href="section7.css">
+    <link rel="stylesheet" href="section8.css">
+    <link rel="stylesheet" href="section9.css">
+    <link rel="stylesheet" href="section10.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="responsive.css">
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/a5c7b19376.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong:wght@500&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+</head>
+<body>
+  <div class="loader">
+      <img src="zidma logo sticky.png">
+    </div>
+    <script>
+      document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                  "body").style.visibility = "hidden";
+                document.querySelector(
+                  ".loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                  ".loader").style.display = "none";
+                document.querySelector(
+                  "body").style.visibility = "visible";
+            }
+        };
+    </script>
+
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="#">
+        <img src="zidma white.png" id="logoImg">
+        <img src="zidma logo sticky.png" id="logoImgSticky">
+      </a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times" id="zoli"></i>
+        </div>
+        <li><a href="#">Home</a></li>
+        <li><a href="services/index.html">Services</a></li>
+        <li><a href="about/index.html">About-Us</a></li>
+        <li><a href="contact/index.html">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu-list");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+      body.classList.add("disabledScroll");
+    }
+    cancelBtn.onclick = ()=>{
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      body.classList.remove("disabledScroll");
+    }
+
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+ 
+  <div class="section-1">
+
+    <img src="marketing-color.jpg" id="banner">
+    
+    <div class="design">
+      <img src="shadow.png" id="section-1-shadow">
+      <img src="mobile.png" id="section-1-mobile">
+      <img src="shasha.png" id="section-1-shasha">
+      <img src="box-shadow-top.png" id="box-shadow-top">
+      <img src="box-shadow-bottom.png" id="box-shadow-bottom">
+      <img src="box-top.png" id="section-1-box-top">
+      <img src="box-bottom.png" id="section-1-box-bottom">  
+    </div>
+    <h1 id="section1-header">We Make The Path To<br>Your <span id="bold-span">Digital Presence</span></h1>
+    <p id="section1-paragraph">We are a full-service digital agency focused on the customer. Your company has a unique narrative to tell, and if told correctly, it can drive your sales.</p> <br>
+    <a href="#" id="section-1-button-cont">
+      <div class="section-1-button">Contact Us &nbsp;<i class="fa-sharp fa-solid fa-paper-plane"></i></div>
+   </a>
+  </div>
+
+  <div class="section2">
+
+    <h1 id="section2-header"> We value adjusting our strategies to each client in order to offer a turnkey solution designed exactly for your needs</h1>
+    <div class="section2-container">
+      <div class="box1">
+        <h1 id="box1-header">CREATIVE</h1>
+        <p id="box1-paragraph">We are competent and experienced in all facets of publicity.We understand that the current growth medium is digital marketing.We have our eyes closed.We do hear and This tiny spark we have </p>
+      </div>    
+      <div class="box2">
+        <h1 id="box2-header">Zero to Hero</h1>
+        <p id="box2-paragraph">Our goal is to comprehend the relationship between the customer and the material. Consider your brand as a puzzle with each piece representing a unique strategy. We're here to get to the larger picture, one step at a time.</p>
+      </div>    
+      <div class="box3">
+        <h1 id="box3-header">Methodical</h1>
+        <p id="box3-paragraph">We make lasting impressions that convert viewers into believers, participants into advocates, and consumers into purchasers. Telling your narrative in a way that engages, inspires, and motivates the individuals you’re trying to reach.</p>        
+      </div>    
+    </div>
+
+  </div>
+
+  <div class="section3">
+
+    <h1 id="section3-header">Your Partner In Success .</h1>
+
+<section class="tab">
+      <div class="tab-container">
+        <ul class="tab-nav">
+          <li class="active">About<span id="tab-nav-responsive"> Us</span></li>
+          <li><span id="tab-nav-responsive">Our</span> Mission</li>
+          <li><span id="tab-nav-responsive">Our</span> Vision</li>
+          
+        </ul>
+        <div class="tab-body active">
+          <div class="tab-col-left">
+
+            <p>Produce and share material that improves the lives of our account holders by generating leads for loans and new accounts.</p>
+            
+          </div>
+          <div class="tab-col-right">
+
+           <div class="circle-cont">
+              <img src="social.png" id="circle-cont-social">
+              <img src="file.png" id="circle-cont-file1">
+              <img src="file.png" id="circle-cont-file2">
+
+              <div class="circle-path1">
+                <div class="path1-circle1"> <img src="profile_icon_4.svg"></div>
+                <div class="path1-circle2"> <img src="profile_icon_4.svg"></div>
+              </div>
+
+              <div class="circle-path2">
+                <div class="path2-circle1"> <img src="profile_icon_3.svg"></div>
+                <div class="path2-circle2"> <img src="profile_icon_3.svg"></div>
+                <div class="path2-circle3"> <img src="profile_icon_3.svg"></div>
+              </div>
+
+              <div class="circle-path3">
+                <div class="path3-circle1"> <img src="profile_icon_1.svg"></div>
+                <div class="path3-circle2"> <img src="profile_icon_1.svg"></div>
+                <div class="path3-circle3"> <img src="profile_icon_2.svg"></div>
+                <div class="path3-circle4"> <img src="profile_icon_2.svg"></div>
+              </div>
+
+           </div>
+            
+          </div>
+        </div>
+        <div class="tab-body">
+            <div class="tab-col-left">
+
+              <p>We intend to provide our clients with the best customized and practical solutions to expand their online and offline presence and achieve their business goals through providing smart solutions, a creative team, friendly service, fast delivery, and ongoing support.</p>
+              
+            </div>
+            <div class="tab-col-right">
+            
+              <div class="mission-cont">
+
+                <img src="marketing-st.png" id="mission-img">
+
+              </div>
+  
+            </div>
+          </div>
+          <div class="tab-body">
+            <div class="tab-col-left">
+              <p>
+                Easily share your bookmarks and collections with others. Create a
+                shareable link that you can send at the click of a button.
+              </p>
+            </div>
+            <div class="tab-col-right">
+
+              <div class="vision-cont">
+                <img src="progress.png" id="vision-img">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+<script>
+
+    const tabNavList = document.querySelectorAll('.tab-nav li');
+const tabBody = document.querySelectorAll('.tab-body');
+
+tabNavList.forEach((item,index,listArray)=>{
+    item.addEventListener('click',()=>{
+        if(item.classList.contains('active')){
+            return;
+        }else{
+            document.querySelector('.active').classList.remove('active');
+            item.classList.add('active');
+        }
+
+        if(listArray[0].classList.contains('active')){
+            tabBody[0].classList.add('active');
+            tabBody[1].classList.remove('active');
+            tabBody[2].classList.remove('active');
+        }
+
+        if(listArray[1].classList.contains('active')){
+            tabBody[1].classList.add('active');
+            tabBody[0].classList.remove('active');
+            tabBody[2].classList.remove('active');
+        }
+
+        if(listArray[2].classList.contains('active')){
+            tabBody[2].classList.add('active');
+            tabBody[1].classList.remove('active');
+            tabBody[0].classList.remove('active');
+        }
+    })
+})
+    
+</script>
+    
+  </div>
+
+  <div class="section4">
+
+    <h1 id="section4-header"> Best digital services for our clients </h1>
+    <p id="section4-p">We are ready to help you move forward and grow your buisiness</p>
+
+    <div class="section4-cards-cont">
+      
+      <div class="section4-card">
+        <div class="section4-card-box" id="section4-card-box-bg1">
+          <img src="lense.png">
+        </div>
+        <h1>Search Engine Optimization</h1>
+        <p> The act of influencing a website’s or a web page’s prominence in an online search engine’s unpaid results, also known as organic, or earned results.</p>
+        <a href="services/services-pages/seo/index.html">Learn More &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="section4-card">
+        <div class="section4-card-box" id="section4-card-box-bg2">
+          <img src="sem.png">
+        </div>
+        <h1>Search Engine Marketing</h1>
+        <p> In an increasingly competitive economy, search engine marketing (SEM) is one of the most effective strategies to expand your business.</p>
+        <a href="services/services-pages/sem/index.html">Learn More &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="section4-card">
+        <div class="section4-card-box" id="section4-card-box-bg3">
+          <img src="84366.png">
+        </div>
+        <h1>Web Development & Design </h1>
+        <p> It's the work that happens behind the scenes to make a website look great, work fast and perform well. All of this is done by a team of experts by using a variety of coding languages</p>
+        <a href="services/services-pages/web/index.html">Learn More &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="section4-card">
+        <div class="section4-card-box" id="section4-card-box-bg4">
+          <img src="smedia.png">
+        </div>
+        <h1>Social Media Markering</h1>
+        <p> For businesses of all sizes, social media is an essential marketing platform. “Why should our business use social media?” was a popular query a few years ago. </p>
+        <a href="services/services-pages/smm/index.html">Learn More &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="section4-card">
+        <div class="section4-card-box">
+          <img src="e.png" id="section4-card-box-bg5">
+        </div>
+        <h1>E-Mail Marketing</h1>
+        <p> We make lasting impressions that convert viewers into believers, participants into advocates, and consumers into purchasers. Telling your narrative in a way that engages, inspires, and motivates the individuals you’re trying to reach.</p>
+        <a href="services/services-pages/email/index.html">Learn More &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="section4-card">
+        <div class="section4-card-box" id="section4-card-box-bg6">
+          <img src="mdev.png">
+        </div>
+        <h1>Mobile App development</h1>
+        <p> Ensure a fascinating presence on the digital environment with modern, feature-rich mobile apps that provide visual delight that is hard to come across. With our knowledge and experience in the field.</p>
+        <a href="services/services-pages/app/index.html">Learn More &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+
+    </div>
+    <br>
+
+  
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#1a1746" fill-opacity="1" d="M0,0L60,10.7C120,21,240,43,360,80C480,117,600,171,720,176C840,181,960,139,1080,117.3C1200,96,1320,96,1380,96L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+    </svg> 
+  </div>
+  
+  <br>
+
+  <div class="section5">
+
+    
+      <h1 id="section5-header">
+        <span id="section5-span1">Be</span> Better & <br> Built 
+        <span id="section5-span1">Different</span> 
+      </h1>
+
+      <img src="why.png" id="section5-img">
+      <h1 id="section5-why-head">Why ZIDMA Solutions.</h1>
+
+      <div class="section5-why">
+        <p ><span id="section5-span2"> >> </span>We assist you in developing a winning strategy that maximizes your effectiveness while minimizing the time and money required to achieve your objectives 
+        </p>
+        <br>
+        <p ><span id="section5-span2"> >> </span>We believe that viewing difficulties and possibilities from new perspectives and using our curiosity leads to significant and fruitful deviations.  
+        </p>
+        <br>
+        <p ><span id="section5-span2"> >> </span>In a world that is always changing, content rich and visually crowded – we help our clients communicate their difference and stay ahead.
+        </p>
+        <br>
+        <p ><span id="section5-span2"> >> </span> As your creative partner, we will lead you through discovery research to validate your brand’s place in the world. We can help you find your voice as we apply our sector-specific expertise. You’ll advance your brand, in-depth and actionable research findings.
+        </p>
+
+        
+      </div>
+
+
+  </div>
+
+
+  <div class="section6">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#1a1746" fill-opacity="1" d="M0,0L60,10.7C120,21,240,43,360,80C480,117,600,171,720,176C840,181,960,139,1080,117.3C1200,96,1320,96,1380,96L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+    </svg>
+
+   <h1 id="section6-head">Our Recent projects</h1>
+
+    <div class="section6-cards-cont">
+
+      <div class="section6-card">
+        <img src="poster1.jpg">
+      </div>
+
+      <div class="section6-card">
+        <img src="utes-solar.jpg">
+      </div>
+
+      <div class="section6-card">
+        <img src="oil.jpg">
+      </div>
+
+      <div class="section6-card">
+        <img src="auction.jpg">
+      </div>
+
+      <div class="section6-card">
+        <img src="pingo.jpg">
+      </div>
+
+      <div class="section6-card">
+        <img src="suits.jpg">
+      </div>
+      <a href="#" class="section6-button">
+        <h1 id="zoli">Discover More</h1>
+      </a>
+    </div>
+
+
+
+  </div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+</script>
+
+  <div class="section7">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="white" fill-opacity="1" d="M0,0L60,10.7C120,21,240,43,360,80C480,117,600,171,720,176C840,181,960,139,1080,117.3C1200,96,1320,96,1380,96L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">       </path>
+    </svg>
+
+    <h1 id="section7-head"> Lets Connect</h1>
+    <div class="section7-box-cont">
+
+      <div class="section7-box1">
+        <a href="https://wa.me/+201118567904?text=Hello" id="section7-meassage">
+          <i class="fa-brands fa-whatsapp" id="section7-wapp-animation"></i>
+        </a>
+        <a href="tel:+201025087222">
+          <h1 id="section7-phone-number">(+20) 102 5087 222</h1>
+        </a>
+        <p id="section7-box1-p">Have any enquiries don't hesitate to messege or give us a call</p>
+      </div>
+      <div class="section7-box2">
+        <a href="mailto: omarsoliman2000@gmail.com" id="section7-mail-icon">
+          <i class="fa-solid fa-envelope-open-text" id="section7-mail-animation"></i>
+        </a>
+
+        <a href="mailto: omarsoliman2000@gmail.com" id="section7-mail">
+         <h1>sales@zidmas.com</h1>
+        </a>
+        <p id="section7-box2-p">Have something in your mind let us know</p>
+      </div>
+      <div class="contactform">
+
+        <div class="contactform-cont">
+          <form action="#">
+            <div class="group">      
+             <input type="text" required>
+             <span class="highlight"></span>
+             <span class="bar"></span>
+             <label>Name</label>
+           </div>
+
+            <div class="group">      
+             <input type="text" required>
+             <span class="highlight"></span>
+             <span class="bar"></span>
+             <label>Company Name</label>
+            </div>
+      
+            <div class="group">      
+             <input type="email" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Email</label>
+            </div>
+
+            <div class="group">      
+             <input type="text" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Phone Number</label>
+            </div>
+
+            <textarea placeholder="Message US"></textarea>
+            <input type="submit" value="Send Message" id="send">
+
+      </form>
+        </div>
+        
+      </div>
+    </div>
+
+  </div>
+
+  <div class="section8">
+    <h1 id="section8-head">ZIDMA's Family</h1>
+    <p id="section8-p"> We value adjusting our strategies to each client in order to offer a turnkey solution designed exactly for your needs..</p>
+
+    <div class="slider-cont">  
+      <div id="slider">
+        <ul id="slideWrap"> 
+          <li><img src="street boost computer.jpg"></li>
+          <li><img src="utes.jpg" alt=""></li>
+          <li><img src="pingo-logo.jpg" alt=""></li>
+          <li><img src="ozz.jpg" alt=""></li>
+          <li><img src="campina.jpg" alt=""></li>
+          <li><img src="reclely.jpg" alt=""></li>
+          <li><img src="street boost computer.jpg"></li>
+          <li><img src="utes.jpg" alt=""></li>
+          <li><img src="pingo-logo.jpg" alt=""></li>
+          <li><img src="ozz.jpg" alt=""></li>
+          <li><img src="campina.jpg" alt=""></li>
+          <li><img src="reclely.jpg" alt=""></li>
+        </ul>
+        <a id="prev" href="#">&#8810;</a>
+        <a id="next" href="#">&#8811;</a>
+        </div>
+      </div>
+      <img src="lap.png" id="section8-frame"> 
+  
+  
+  <script>
+    var responsiveSlider = function() {
+
+var slider = document.getElementById("slider");
+var sliderWidth = slider.offsetWidth;
+var slideList = document.getElementById("slideWrap");
+var count = 1;
+var items = slideList.querySelectorAll("li").length;
+var prev = document.getElementById("prev");
+var next = document.getElementById("next");
+
+window.addEventListener('resize', function() {
+  sliderWidth = slider.offsetWidth;
+});
+
+var prevSlide = function() {
+  if(count > 1) {
+    count = count - 2;
+    slideList.style.left = "-" + count * sliderWidth + "px";
+    count++;
+  }
+  else if(count = 1) {
+    count = items - 1;
+    slideList.style.left = "-" + count * sliderWidth + "px";
+    count++;
+  }
+};
+
+var nextSlide = function() {
+  if(count < items) {
+    slideList.style.left = "-" + count * sliderWidth + "px";
+    count++;
+  }
+  else if(count = items) {
+    slideList.style.left = "0px";
+    count = 1;
+  }
+};
+
+next.addEventListener("click", function() {
+  nextSlide();
+});
+
+prev.addEventListener("click", function() {
+  prevSlide();
+});
+
+setInterval(function() {
+  nextSlide()
+}, 4000);
+
+};
+
+window.onload = function() {
+responsiveSlider();  
+}
+
+
+  </script>
+
+  </div>
+  <div class="section9">
+    <div class="parallax">
+      <h1 id="section9-haed">Looking for the best digital<br> agency & marketing solution?</h1>
+      <p id="section9-p"> ❝ It’s not what you sell that matters as much as how you sell it!❞ </p>
+      
+      <a href="#" id="section9-btn">
+        <h1>Get Your Project Started &nbsp; <i class="fa-sharp fa-solid fa-paper-plane"></i></h1>
+      </a>
+    </div>
+
+  </div>
+  <div class="section10">
+    <h1 id="section10-head">Our Partners .</h1>
+    <div class="section10-cont">
+      <div class="section10-sec">
+        <img src="tawasol.png">
+      </div>
+      <div class="section10-sec">
+        <img src="meta.jpg">
+      </div>
+      <div class="section10-sec">
+        <img src="google.jpg">
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="footer">
+
+    <div class="footer-cont">
+      <div class="footer-sec">
+        <h1 id="footer-sec-head">About Us</h1>
+        <ul id="footer-sec-ul"> 
+          <li><a href="#">Company Profile</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Affiliate Program</a></li>
+        </ul>        
+      </div>
+
+      <div class="footer-sec">
+        <h1 id="footer-sec-head">Support</h1>
+        <ul id="footer-sec-ul">
+          <li><a href="#">Frequently Asked</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Web Development & Design </a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>  
+      </div>
+      <div class="footer-sec">
+        <h1 id="footer-sec-head">Our Services</h1>
+        <ul id="footer-sec-ul">
+          <li><a href="services/services-pages/seo/index.html">Search Engine Optimization</a></li>
+          <li><a href="services/services-pages/sem/index.html">Search Engine Marketing</a></li>
+          <li><a href="services/services-pages/web/index.html">Web Development & Design </a></li>
+          <li><a href="services/services-pages/smm/index.html">Social Media Markering</a></li>
+          <li><a href="services/services-pages/email/index.html">E-Mail Marketing</a></li>
+          <li><a href="services/services-pages/app/index.html">Mobile App development</a></li>
+          <li><a href="#">Reservation QR Systems </a></li>
+        </ul>    
+      </div>
+
+      <div class="footer-sec">
+
+        <h1 id="footer-sec-head">ZIDMA Solutions</h1>
+        <p>We intend to provide our clients with the best customized and practical solutions to expand their online and offline presence and achieve their business goals through providing smart solutions, a creative team, friendly service, fast delivery, and ongoing support.</p>
+
+        <ul id="footer-social">
+          <a href="https://www.facebook.com/"><li><i class="fa-brands fa-square-facebook"></i></li></a>
+          <a href="https://www.instagram.com/"><li><i class="fa-brands fa-instagram instagram"></i></li></a>
+          <a href="#"><li><i class="fa-brands fa-whatsapp"></i></li></a>
+          <a href="#"><li><i class="fa-brands fa-behance"></i></li></a>
+          <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a>
+        </ul>
+
+      </div>
+      
+    </div>
+
+  </div>
+  <div class="copyright-footer">
+    <p> © Copyrights 2020 ZIDMA Solutions All rights reserved.</p>
+  </div>
+
+
+
+  
+
+</body>
+</html>
